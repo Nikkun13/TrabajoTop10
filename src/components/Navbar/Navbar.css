@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: turquoise;
+  position: fixed;
+  top: 10vh;
+  width: 80%;
+  height: 90vh;
+  transition: right 0.3s linear;
+
+}
+
+.enlace {
+  padding: 0.5rem 0.8rem;
+  color: grey;
+  text-decoration: none;
+}
+
+.abierto {
+  right: 0;
+}
+
+.cerrado {
+  right: -75%;
+}
