@@ -8,3 +8,5 @@ Posicionarse mediante terminal en la carpeta que contiene los archivos .json. Pa
 Posiblemente haya que instalar el node_modules porque sino lo siguiente no funcionará; para ello basta con tipear "npm install" y esperar a que termine.
 
 Escribir en terminal "npm start" para poder ver la página armada
+
+Para editar el codigo en conjunto, escribir en consola "git pull origin main" antes de empezar, asi se cargan los cambios que se hicieron en el documento
