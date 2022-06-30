@@ -9,4 +9,8 @@ Posiblemente haya que instalar el node_modules porque sino lo siguiente no funci
 
 Escribir en terminal "npm start" para poder ver la página armada
 
+<<<<<<< HEAD
 Para editar el codigo en conjunto, escribir en consola "git pull origin main" antes de empezar, asi se cargan los cambios que se hicieron en el documento
+=======
+Para editar el codigo en conjunto, escribir en consola "git pull origin main" antes de empezar, asi se cargan los cambios que se hicieron en el documento
+>>>>>>> origin/main
