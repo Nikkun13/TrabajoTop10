@@ -1,7 +1,38 @@
 .header {
     height: 10vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: blue;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    /* background-color: blue; */
 }
+
+.compartir {
+    cursor: pointer;
+    margin: 35px;
+    position: absolute;
+    right: 0;
+    color: #9CA3AF;
+}
+
+.compartir::before {
+    content: "";
+    width: 0;
+    height: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #E3B6F9;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    bottom: -12px;
+}
+
+.compartir:hover::before {
+    width: 8px;
+    height: 8px;
+}
+
+
