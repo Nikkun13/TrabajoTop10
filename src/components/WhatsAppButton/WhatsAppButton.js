@@ -12,7 +12,7 @@ const WhatsAppButton = () => {
         <svg
           width="33"
           height="60"
-          viewBox="0 7 33 34"
+          viewBox="0 5 33 34"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
