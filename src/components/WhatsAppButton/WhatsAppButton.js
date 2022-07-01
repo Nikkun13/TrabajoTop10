@@ -4,7 +4,6 @@ import "../WhatsAppButton/WhatsAppButton.css";
 const WhatsAppButton = () => {
   return (
     <>
-      <h1>wasa</h1>
       <a
         href="https://api.whatsapp.com/send?phone=543512609595&text=Hola%21%20"
         target="blank"
