@@ -1,27 +1,38 @@
 .navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background: turquoise;
-  position: fixed;
-  top: 10vh;
-  width: 80%;
-  height: 90vh;
-  transition: right 0.3s linear;
-
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
 }
 
-.enlace {
-  padding: 0.5rem 0.8rem;
-  color: grey;
-  text-decoration: none;
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
 }
 
-.abierto {
-  right: 0;
+.navbar ul li a {
+    text-decoration: none;
+    color: #9CA3AF;
 }
 
-.cerrado {
-  right: -75%;
+.navbar ul li::before {
+    content: "";
+    width: 0;
+    height: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #E3B6F9;
+    position: absolute;
+    bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar ul li:hover::before {
+    width: 8px;
+    height: 8px;
 }
