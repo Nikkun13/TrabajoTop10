@@ -11,9 +11,10 @@
 
 .compartir {
     cursor: pointer;
-    margin: 35px;
+    margin: 2vh;
     position: absolute;
     right: 0;
+    top: 0;
     color: #9CA3AF;
 }
 

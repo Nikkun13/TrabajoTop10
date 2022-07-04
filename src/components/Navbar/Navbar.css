@@ -1,11 +1,11 @@
 .navbar {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 20px 0;
+    padding: 2vh 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: red; */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar ul li {
@@ -21,8 +21,8 @@
 
 .navbar ul li::before {
     content: "";
-    width: 0;
-    height: 0;
+    width:0;
+    height:0;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -33,6 +33,6 @@
 }
 
 .navbar ul li:hover::before {
-    width: 8px;
-    height: 8px;
+    width:8px;
+    height:8px;
 }
