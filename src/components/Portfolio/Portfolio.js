@@ -1,9 +1,9 @@
-import "./Services.css";
+import "./Portfolio.css";
 
-const Services = () => {
+const Portfolio = () => {
 
     return (
-        <div id="servicios">
+        <div id="portfolio">
         <div id="carouselExampleIndicators" class="carousel slide seccion" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -12,7 +12,7 @@ const Services = () => {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?w=800" class="d-block w-100" alt="Pepsico"></img>
+                        <img src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?w=800" class="d-block w-100" alt="Img1"></img>
                         <div class="carousel-caption d-none d-md-block">
                             <p>Fotografia/Producto</p>
                             <h2 class="text-primary bg-dark">PROYECTO 1</h2>
@@ -20,7 +20,7 @@ const Services = () => {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://ep00.epimg.net/elpais/imagenes/2019/10/30/album/1572424649_614672_1572451736_album_normal.jpg" class="d-block w-100" alt="Cabrales"></img>
+                        <img src="https://ep00.epimg.net/elpais/imagenes/2019/10/30/album/1572424649_614672_1572451736_album_normal.jpg" class="d-block w-100" alt="img2"></img>
                         <div class="carousel-caption d-none d-md-block">
                             <p>Fotografia/Producto</p>
                             <h2 class="text-warning bg-dark">PROYECTO 2</h2>
@@ -28,7 +28,7 @@ const Services = () => {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" class="d-block w-100" alt="Mccain"></img>
+                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" class="d-block w-100" alt="Img3"></img>
                         <div class="carousel-caption d-none d-md-block">
                             <p>Fotografia/Producto</p>
                             <h2 class="text-danger bg-dark">PROYECTO 3</h2>
@@ -85,4 +85,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Portfolio
