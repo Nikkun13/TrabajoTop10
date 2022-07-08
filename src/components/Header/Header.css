@@ -36,4 +36,9 @@
     height: 8px;
 }
 
-
+.logoHeader {
+    position: absolute;
+    height: 8vh;
+    left: 4vh;
+    z-index: 1001;
+}

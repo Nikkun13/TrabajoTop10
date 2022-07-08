@@ -14,6 +14,7 @@ const Header = () => {
   
     return (
       <div className="header">
+        <img className="logoHeader" src="https://png.pngtree.com/element_pic/00/16/07/115783931601b5c.jpg"></img>
         <Navbar />
         <p className='compartir'>COMPARTIR</p>
         {/* <NavbarBurger open={open} />

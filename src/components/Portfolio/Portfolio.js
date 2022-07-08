@@ -3,7 +3,7 @@ import "./Portfolio.css";
 const Portfolio = () => {
 
     return (
-        <div id="portfolio">
+        <div id="portfolio" className="portfolioSeccion">
         <div id="carouselExampleIndicators" class="carousel slide seccion" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
