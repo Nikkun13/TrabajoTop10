@@ -17,3 +17,7 @@
   min-height: 100vh;
   color: white;
 }
+
+.error404 {
+  padding: 25vh;
+}

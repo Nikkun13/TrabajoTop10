@@ -1,0 +1,17 @@
+.logo1 {
+    height: 200px;
+    position: absolute;
+    right: 150px;
+}
+
+.nosotrosBanner {
+    font-size: 120px;
+}
+
+.nosotrosDescripcion {
+    font-size: 32px;
+    width: 830px;
+    left: 10vh;
+    position: relative;
+    padding: 100px 0 0 0;
+}
