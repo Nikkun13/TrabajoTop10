@@ -1,4 +1,5 @@
 import "./Portfolio.css";
+import ReactPlayer from 'react-player'
 
 const Portfolio = () => {
 
@@ -45,33 +46,42 @@ const Portfolio = () => {
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-            <div className="Separacion">
-            <spam>PRODUCTORA AUDIOVISUAL</spam>
-            <spam>PRODUCTORA AUDIOVISUAL</spam>
-            <spam>PRODUCTORA AUDIOVISUAL</spam>
+            <div className="separacion seccion">
+            <spam className="productora primerRenglon"><b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISIAL</b></spam><br/>
+            <spam className="productora segundoRenglon">PRODUCTORA <b>AUDIOVISUAL</b>. PRODUCTORA <b>AUDIOVISIAL</b></spam><br/>
+            <spam className="productora tercerRenglon"><b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISIAL</b></spam><br/>
+        </div>
+
+        <div  className="seccion videoDrone">
+                <ReactPlayer
+                url={require('../../media/videos/videoBicicleta.mp4')}
+                width='100%'
+                height='100%' 
+                controls
+                />
+                <div className="textoDrone">
+                    <p>Exteriores</p>
+                    <p className="fontDrone">Toma de drone</p>
+                    <p>¿Tienes dudas? ¡Contáctanos!</p>
+                </div>
         </div>
 
         <div  className="seccion">
-            <video className="drom"></video>
-            <p>video del drom</p>
-        </div>
-
-        <div  className="seccion">
-            <h1>¿POR QUÉ UN VIDEO?</h1>
+            <h1 className="nombreTabla">¿POR QUÉ UN VIDEO?</h1>
             <table>
-                <tr>
+                <tr className="porcentajeTabla">
                     <th>80%</th>
                     <th>90%</th>
                     <th>64%</th>
                     <th>100%</th>
                 </tr>
-                <tr>
-                    <td>de tráfico por internet será representado por videos en el año 2022.</td>
-                    <td>de los consumidores son influenciados en sus decisiones por un video. </td>
-                    <td>de los consumidoresd prefieren comprar después de ver un video. </td>
-                    <td>es lo que aumenta según Youtube, el Mobile Video cada año.</td>
+                <tr className="textoTabla">
+                    <td className="margenTabla">de tráfico por internet será representado por videos en el año 2022.</td>
+                    <td className="margenTabla">de los consumidores son influenciados en sus decisiones por un video. </td>
+                    <td className="margenTabla">de los consumidoresd prefieren comprar después de ver un video. </td>
+                    <td className="margenTabla">es lo que aumenta según Youtube, el Mobile Video cada año.</td>
                 </tr>
-                <tr>
+                <tr className="fuentesTabla">
                     <td>FUENTES: Forbes</td>
                     <td>FUENTES: Forbes</td>
                     <td>FUENTES: Forbes</td>
