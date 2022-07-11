@@ -1,14 +1,18 @@
 .portfolioSeccion {
   padding: 100px 0 0 0;
+  width: 100%;
+}
+
+.separacion {
+  overflow: hidden;
 }
 
 .productora {
   font-size: 64px;
-  width: 10000px;
+  width: 100%;
   padding: 10px;
-  white-space: pre;
+  white-space: nowrap;
   position: relative;
-  overflow: hidden;
 }
 
 .primerRenglon {
@@ -64,6 +68,7 @@ mal al achicar la pantalla, ver como solucionarlo y hacerlo mas responsive. */
 
 .fuentesTabla {
   font-size: 12px;
+  color: #e3b6f9;
 }
 
 .margenTabla {

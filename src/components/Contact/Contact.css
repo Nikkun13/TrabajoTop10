@@ -1,0 +1,39 @@
+.contactTituloUno {
+    font-size: 24px;
+    color: #E3B6F9;
+    padding: 20px;
+}
+
+.contactTituloDos {
+    font-size: 148px;
+    padding: 20px;
+}
+
+.contactMail {
+    font-size: 24px;
+    color: #E3B6F9;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.contenedorFormulario {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 200px;
+}
+
+.contForm {
+    font-size: 40px;
+    color: #E3B6F9;
+}
+
+form ul li {
+    list-style: none;
+}
+
+.nombreForm, .mailForm, .textForm {
+    width: 50%;
+    margin: 10px 0;
+    padding: 0;
+    box-sizing: border-box;
+}
