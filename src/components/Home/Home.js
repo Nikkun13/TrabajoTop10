@@ -22,6 +22,7 @@ const Home = () => {
 
   return (
     <div id="inicio" className="seccionNoTop">
+      <div className="areaVideo">
       {playi === true ? (
         <>
           <ReactPlayer
@@ -69,6 +70,7 @@ const Home = () => {
       {/* Me volvi loco porque no fucionaba bien el autoplay, buscando buscando encontre el porque...
             Chrome desactiva el autoplay de los videos que tienen volumen, probe poniendo el volumen en 0 y
             funciona bien. Asi que si el video de Fran tiene volumen, no puede tener autoplay, una u otra. */}
+    </div>
     </div>
   );
 };

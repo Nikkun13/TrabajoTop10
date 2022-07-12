@@ -8,6 +8,10 @@
     top: 10vh;
 }
 
+.areaVideo {
+    position: relative;
+}
+
 .areaPlayPause {
     width: 100%;
     height: 100%;
@@ -19,7 +23,7 @@
 .botonPlayPause {
     opacity: 0;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -47,8 +51,8 @@
 
 .botonVolumen {
     position: absolute;
-    bottom: 20%;
-    left: 20%;
+    bottom: 5%;
+    left: 15%;
     transform: translate(0, -50%);
     text-align: center;
     background-color: rgb(0,0,0,0.5);

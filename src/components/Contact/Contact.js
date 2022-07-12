@@ -16,7 +16,7 @@ const Contact = () => {
       <div className="formAndContact">
         <section className="contacto">
           <h5 className="contForm">Contacto</h5>
-          <span>cordoba</span>
+          <span>Cordoba</span>
           <span>+548965664</span>
           <div>
             <h5 className="contForm">Siguenos</h5>
@@ -37,6 +37,7 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="user_name"
+                  required
                 />
               </li>
 
@@ -47,6 +48,7 @@ const Contact = () => {
                   type="email"
                   id="mail"
                   name="user_mail"
+                  required
                 />
               </li>
               <li className="Phone">
@@ -56,6 +58,7 @@ const Contact = () => {
                   type="number"
                   id="telephone"
                   name="user_telephone"
+                  required
                 />
               </li>
 
@@ -65,6 +68,7 @@ const Contact = () => {
                   className="textForm"
                   id="msg"
                   name="user_message"
+                  required
                 ></input>
               </li>
               <button className="Button">flecha</button>

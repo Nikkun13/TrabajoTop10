@@ -91,7 +91,8 @@ const Portfolio = () => {
         <br />
       </div>
 
-      <div className="seccion videoDrone">
+      <div className="seccion">
+        <div className="videoDrone d-md-block">
         <ReactPlayer
           url={require("../../media/videos/videoBicicleta.mp4")}
           width="100%"
@@ -99,9 +100,10 @@ const Portfolio = () => {
           controls
         />
         <div className="textoDrone">
-          <p>Exteriores</p>
-          <p className="fontDrone">Toma de drone</p>
-          <p>¿Tienes dudas? ¡Contáctanos!</p>
+          <p className="tituloUnoDrone">Exteriores</p>
+          <h3 className="tituloDosDrone">Toma de drone</h3>
+          <p className="tituloUnoDrone">¿Tienes dudas? ¡Contáctanos!</p>
+        </div>
         </div>
       </div>
 
