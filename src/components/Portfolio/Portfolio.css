@@ -74,3 +74,20 @@ mal al achicar la pantalla, ver como solucionarlo y hacerlo mas responsive. */
 .margenTabla {
   padding: 10px 20px;
 }
+
+/* estilos carrusel */
+.carruselInfo {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 2%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: start;
+}
+.tituloCarrusel {
+  margin: 0.5rem;
+}
+.textoCarrusel {
+  margin: 0.5rem;
+}

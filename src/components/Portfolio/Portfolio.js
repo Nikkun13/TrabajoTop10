@@ -16,9 +16,13 @@ const Portfolio = () => {
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>as.</p>
+            <div class="carruselInfo d-md-block">
+              <span className="textoCarrusel">FOTOGRAFÍA | PRODUCTO </span>
+              <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
+              <p className="textoCarrusel">
+                Videos y fotos promocionales de la marca, presentación de
+                productos.
+              </p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
@@ -27,10 +31,12 @@ const Portfolio = () => {
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
+            <div class="carruselInfo d-md-block">
+              <span className="textoCarrusel">FOTOGRAFÍA | PRODUCTO </span>
+              <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
+              <p className="textoCarrusel">
+                Videos y fotos promocionales de la marca, presentación de
+                productos.
               </p>
             </div>
           </div>
@@ -40,10 +46,12 @@ const Portfolio = () => {
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
+            <div class="carruselInfo d-md-block">
+              <span className="textoCarrusel">FOTOGRAFÍA | PRODUCTO </span>
+              <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
+              <p className="textoCarrusel">
+                Videos y fotos promocionales de la marca, presentación de
+                productos.
               </p>
             </div>
           </div>

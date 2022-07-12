@@ -1,39 +1,80 @@
 .contactTituloUno {
-    font-size: 24px;
-    color: #E3B6F9;
-    padding: 20px;
+  font-size: 24px;
+  color: #e3b6f9;
+  padding: 20px;
 }
 
 .contactTituloDos {
-    font-size: 148px;
-    padding: 20px;
+  font-size: 148px;
+  padding: 20px;
 }
 
 .contactMail {
-    font-size: 24px;
-    color: #E3B6F9;
-    cursor: pointer;
-    padding: 20px;
+  font-size: 24px;
+  color: #e3b6f9;
+  cursor: pointer;
+  padding: 20px;
+}
+.formAndContact {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8rem;
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container {
+  display: grid;
+
+  grid-template-columns: 1.1fr 1.2fr 1.3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 10000px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Name Name Name Name"
+    "Email Email Phone Phone"
+    "Msg Msg Msg Button";
+}
+.Name {
+  grid-area: Name;
+}
+.Email {
+  grid-area: Email;
+}
+.Phone {
+  grid-area: Phone;
+}
+.Msg {
+  grid-area: Msg;
+}
+.Button {
+  grid-area: Button;
 }
 
-.contenedorFormulario {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    padding-top: 200px;
+li {
+  list-style: none;
 }
-
 .contForm {
-    font-size: 40px;
-    color: #E3B6F9;
+  font-size: 40px;
+  color: #e3b6f9;
 }
 
-form ul li {
-    list-style: none;
+input {
+  margin: 10px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 91px;
+  height: 40px;
+  background-color: rgba(227, 182, 249, 0.1);
+  color: rgba(227, 182, 249, 0.4);
 }
 
-.nombreForm, .mailForm, .textForm {
-    width: 50%;
-    margin: 10px 0;
-    padding: 0;
-    box-sizing: border-box;
+::placeholder {
+  color: rgba(227, 182, 249, 0.4);
+}
+input:focus {
+  color: rgba(227, 182, 249, 1);
+  outline: none;
 }
