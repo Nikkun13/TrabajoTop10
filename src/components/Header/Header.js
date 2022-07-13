@@ -14,12 +14,14 @@ const Header = () => {
 
   return (
     <div className="header">
+      <div className="contenedorHeader">
       <Navbar />
       <CopyToClipboard text="Copiado">
         <p className="compartir">COMPARTIR</p>
       </CopyToClipboard>
       {/* <NavbarBurger open={open} />
         <MenuButton open={open} handleClick={handleClick} /> */}
+      </div>
     </div>
   );
 };

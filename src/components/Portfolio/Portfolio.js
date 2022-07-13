@@ -17,7 +17,7 @@ const Portfolio = () => {
               alt="..."
             />
             <div class="carruselInfo d-md-block">
-              <span className="textoCarrusel">FOTOGRAFÍA | PRODUCTO </span>
+              <span className="textoCarrusel">FOTOGRAFÍA 1 | PRODUCTO </span>
               <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
               <p className="textoCarrusel">
                 Videos y fotos promocionales de la marca, presentación de
@@ -32,7 +32,7 @@ const Portfolio = () => {
               alt="..."
             />
             <div class="carruselInfo d-md-block">
-              <span className="textoCarrusel">FOTOGRAFÍA | PRODUCTO </span>
+              <span className="textoCarrusel">FOTOGRAFÍA 2 | PRODUCTO </span>
               <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
               <p className="textoCarrusel">
                 Videos y fotos promocionales de la marca, presentación de
@@ -47,7 +47,7 @@ const Portfolio = () => {
               alt="..."
             />
             <div class="carruselInfo d-md-block">
-              <span className="textoCarrusel">FOTOGRAFÍA | PRODUCTO </span>
+              <span className="textoCarrusel">FOTOGRAFÍA 3 | PRODUCTO </span>
               <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
               <p className="textoCarrusel">
                 Videos y fotos promocionales de la marca, presentación de

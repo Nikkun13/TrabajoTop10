@@ -12,6 +12,7 @@
     list-style: none;
     display: inline-block;
     margin: 0 50px;
+    position: relative;
 }
 
 .navbar ul li a {
@@ -19,20 +20,23 @@
     color: #9CA3AF;
 }
 
-.navbar ul li::before {
+.navbar ul li::after {
     content: "";
-    width:0;
-    height:0;
+    width:8px;
+    height:8px;
+    opacity: 0;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: #E3B6F9;
     position: absolute;
-    bottom: 20px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
     transition: 0.3s ease-in-out;
+
 }
 
-.navbar ul li:hover::before {
-    width:8px;
-    height:8px;
+.navbar ul li:hover::after {
+    opacity: 1;
 }

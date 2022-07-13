@@ -1,0 +1,21 @@
+.estrellasPintadas {
+    font-size: 20px;
+    -webkit-text-stroke: 1px #9ca3af;
+    color: #9ca3af;
+    letter-spacing: 10px;
+}
+
+.estrellasSinPintar {
+    letter-spacing: 10px;
+    font-size: 20px;
+    -webkit-text-stroke: 1px #9ca3af;
+    color: transparent;
+}
+
+.testimonio {
+    font-size: 20px;
+}
+
+.testimonioItem {
+    justify-items: center;
+}

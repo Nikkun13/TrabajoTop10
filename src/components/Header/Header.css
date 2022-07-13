@@ -9,6 +9,12 @@
     /* background-color: blue; */
 }
 
+.contenedorHeader {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
 .compartir {
     cursor: pointer;
     margin: 2vh;
@@ -20,20 +26,22 @@
 
 .compartir::before {
     content: "";
-    width: 0;
-    height: 0;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: #E3B6F9;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     transition: 0.3s ease-in-out;
-    bottom: -12px;
+    bottom: -10px;
 }
 
 .compartir:hover::before {
-    width: 8px;
-    height: 8px;
+    opacity: 1;
 }
 
 .logoHeader {
