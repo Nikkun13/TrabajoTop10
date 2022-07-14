@@ -1,14 +1,19 @@
 import "./Contact.css";
-
+import { CopyToClipboard } from "react-copy-to-clipboard";
 const Contact = () => {
   return (
-    <div id="contacto" className="seccion">
+    <div id="contacto">
       <div className="escribenos">
         <h4 className="contactTituloUno">
           ¿Tienes un proyecto o idea en mente que necesites ayuda?
         </h4>
         <h2 className="contactTituloDos">¡Escríbenos!</h2>
-        <h5 className="contactMail">ortizpellegrinifrancisco@gmail.com</h5>
+        <h5 className="contactMail">
+          ortizpellegrinifrancisco@gmail.com
+          <CopyToClipboard text="ortizpellegrinifrancisco@gmail.com">
+            <button className="mail">Copiar Mail</button>
+          </CopyToClipboard>
+        </h5>
       </div>
 
       {/* */}
@@ -18,12 +23,6 @@ const Contact = () => {
           <h5 className="contForm">Contacto</h5>
           <span>Cordoba</span>
           <span>+548965664</span>
-          <div>
-            <h5 className="contForm">Siguenos</h5>
-            <buton>icon</buton>
-            <buton>icon</buton>
-            <buton>icon</buton>
-          </div>
         </section>
 
         {/* */}
@@ -63,15 +62,23 @@ const Contact = () => {
               </li>
 
               <li className="Msg">
-                <input
+                <textarea
                   placeholder="Mensaje"
                   className="textForm"
                   id="msg"
                   name="user_message"
                   required
-                ></input>
+                ></textarea>
               </li>
-              <button className="Button">flecha</button>
+
+              <li>
+                <label>
+                  <input type="checkbox" />
+                </label>
+                <label for="check1">Check me!</label>
+              </li>
+
+              <button className="Button">Enviar</button>
             </ul>
           </form>
         </div>

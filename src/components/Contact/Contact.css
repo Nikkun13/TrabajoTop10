@@ -16,41 +16,55 @@
   padding: 20px;
 }
 .formAndContact {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-around;
-  margin-top: 8rem;
 }
 .contacto {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
 .container {
   display: grid;
-
-  grid-template-columns: 1.1fr 1.2fr 1.3fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-row-gap: 10000px;
-  gap: 0px 0px;
+  grid-template-columns: 1.1fr 1.2fr 1.2fr 1.1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 5px;
+  grid-auto-flow: row;
   grid-template-areas:
     "Name Name Name Name"
     "Email Email Phone Phone"
-    "Msg Msg Msg Button";
+    "Msg Msg Msg Msg"
+    "Check Label . Button";
 }
+
 .Name {
   grid-area: Name;
 }
+
 .Email {
   grid-area: Email;
 }
+
 .Phone {
   grid-area: Phone;
 }
+
 .Msg {
   grid-area: Msg;
 }
+
 .Button {
   grid-area: Button;
+}
+
+.Check {
+  grid-area: Check;
+}
+
+.Label {
+  grid-area: Label;
 }
 
 li {
@@ -60,13 +74,31 @@ li {
   font-size: 40px;
   color: #e3b6f9;
 }
-
+.container button {
+  margin-top: 0.5rem;
+  width: 8rem;
+  height: 3rem;
+  background: #e3b6f9;
+  border-color: transparent;
+  border-radius: 80px;
+  color: #af45f0;
+  font-size: 20px;
+  font-weight: 700;
+}
 input {
-  margin: 10px;
   width: 100%;
-  padding: 5px;
+
+  padding: 10px;
   border-radius: 91px;
   height: 40px;
+  background-color: rgba(227, 182, 249, 0.1);
+  color: rgba(227, 182, 249, 0.4);
+}
+textarea {
+  padding: 10px;
+  width: 100%;
+  height: 4rem;
+  border-radius: 20px;
   background-color: rgba(227, 182, 249, 0.1);
   color: rgba(227, 182, 249, 0.4);
 }
@@ -77,4 +109,42 @@ input {
 input:focus {
   color: rgba(227, 182, 249, 1);
   outline: none;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+}
+.redes button {
+  width: 7vh;
+  height: 7vh;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 2px solid #e3b6f9;
+}
+.redes button svg {
+  fill: #e3b6f9;
+}
+.redes button:hover {
+  background-color: #e3b6f9;
+}
+.redes button:hover svg {
+  fill: #111827;
+}
+.mail {
+  display: none;
+}
+.escribenos:hover .mail {
+  display: inline;
+}
+.mail {
+  margin-left: 1rem;
+  font-weight: 700;
+  width: 8rem;
+  font-size: 20px;
+  height: 8rem;
+  border-color: transparent;
+  border-radius: 90px;
+  color: #0e131f;
+  background-color: #e3b6f9;
 }
