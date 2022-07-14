@@ -1,21 +1,30 @@
+.testimonioTitulo {
+    font-size: 60px;
+    padding-bottom: 200px;
+}
+
 .estrellasPintadas {
     font-size: 20px;
-    -webkit-text-stroke: 1px #9ca3af;
-    color: #9ca3af;
+    -webkit-text-stroke: 1px #AF45F0;
+    color: #AF45F0;
     letter-spacing: 10px;
 }
 
 .estrellasSinPintar {
     letter-spacing: 10px;
     font-size: 20px;
-    -webkit-text-stroke: 1px #9ca3af;
+    -webkit-text-stroke: 1px #AF45F0;
     color: transparent;
 }
 
 .testimonio {
-    font-size: 20px;
+    font-size: 32px;
+    margin: 0 25vw;
+    padding-bottom: 50px;
 }
 
-.testimonioItem {
-    justify-items: center;
+.nombreTestimonio {
+    font-size: 16px;
+    color: #AF45F0;
+    padding: 20px;
 }

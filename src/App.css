@@ -18,23 +18,6 @@
   color: white;
 }
 
-.radial {
-  width: 320px;height: 380px;
-  position: absolute;
-  top: 50vh;
-  left: -2%;
-  
-  background: #E3B6F900 ; /* Opción para navegadores antiguos que no soportan el degradado css */
-  background: -moz-radial-gradient(center, ellipse cover, #E3B6F9 0%,#E3B6F900 70%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#E3B6F9), color-stop(100%,#E3B6F900)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, #E3B6F9 0%,#E3B6F900 70%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #E3B6F9 0%,#E3B6F900 70%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #E3B6F9 0%,#E3B6F900 70%); /* IE10+ */
-  background: radial-gradient(ellipse at center, #E3B6F9 0%,#E3B6F900 70%);/* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c',GradientType=1 ); /* IE6-9 versión alternativa con degradado horizontal */
-    
-  }
-
 .error404 {
   padding: 25vh;
 }

@@ -9,47 +9,20 @@ const Testimonials = () => {
   ></script>;
   return (
     <div id="testimonios" className="seccion">
-      <h1>TESTIMONIOS</h1>
-      <div className="wrapper">
-        <div className="sliderTestimonial">
-          <div className="testimonioItem">
-            <div className="testimonioCliente">
-              <h4 className="testimonio">
-                Estamos muy contentos porque las clases son muy lúdicas, a
-                través del juego y de canciones (...) Os animamos a venir.”
-              </h4>
-              <spam className="estrellasPintadas">★★★★</spam>
-              <spam className="estrellasSinPintar">★</spam>
-              <h6 className="nombreTestimonio">Rocio</h6>
-            </div>
-          </div>
-          <div className="testimonioItem">
-            <div className="testimonioCliente">
-              <h4 className="testimonio">
-                Estamos muy contentos porque las clases son muy lúdicas, a
-                través del juego y de canciones (...) Os animamos a venir.”
-              </h4>
-              <spam className="estrellasPintadas">★★★</spam>
-              <spam className="estrellasSinPintar">★★</spam>
-              <h6 className="nombreTestimonio">Fernando</h6>
-            </div>
-          </div>
-          <div className="testimonioItem">
-            <div className="testimonioCliente">
-              <h4 className="testimonio">
-                Estamos muy contentos porque las clases son muy lúdicas, a
-                través del juego y de canciones (...) Os animamos a venir.”
-              </h4>
-              <spam className="estrellasPintadas">★★★★★</spam>
-              <h6 className="nombreTestimonio">Gustavo</h6>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h2 className="testimonioTitulo">Testimonios</h2>
       <div id="carouseInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img
+          <div className="testimonioCliente">
+              <h4 className="testimonio">
+                Estamos muy contentos porque las clases son muy lúdicas, a
+                través del juego y de canciones (...) Os animamos a venir.”
+              </h4>
+                <spam className="estrellasPintadas">★★★★</spam>
+                <spam className="estrellasSinPintar">★</spam>
+              <h6 className="nombreTestimonio">Rocio</h6>
+            </div>
+            {/* <img
               src="./images/carrusel-img-1.png"
               class="d-block w-100"
               alt="..."
@@ -61,10 +34,19 @@ const Testimonials = () => {
                 Videos y fotos promocionales de la marca, presentación de
                 productos.
               </p>
-            </div>
+            </div> */}
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img
+          <div className="testimonioCliente">
+              <h4 className="testimonio">
+                Estamos muy felices porque las clases son muy lúdicas, a
+                través del juego y de canciones (...) Os animamos a venir.”
+              </h4>
+                <spam className="estrellasPintadas">★★★</spam>
+                <spam className="estrellasSinPintar">★★</spam>
+              <h6 className="nombreTestimonio">Fernando</h6>
+            </div>
+            {/* <img
               src="./images/carrusel-img-1.png"
               class="d-block w-100"
               alt="..."
@@ -76,10 +58,18 @@ const Testimonials = () => {
                 Videos y fotos promocionales de la marca, presentación de
                 productos.
               </p>
-            </div>
+            </div> */}
           </div>
           <div class="carousel-item">
-            <img
+          <div>
+              <h4 className="testimonio">
+                Estamos muy animados porque las clases son muy lúdicas, a
+                través del juego y de canciones (...) Os animamos a venir.”
+              </h4>
+              <spam className="estrellasPintadas">★★★★★</spam>
+              <h6 className="nombreTestimonio">Gustavo</h6>
+            </div>
+            {/* <img
               src="./images/carrusel-img-1.png"
               class="d-block w-100"
               alt="..."
@@ -91,7 +81,7 @@ const Testimonials = () => {
                 Videos y fotos promocionales de la marca, presentación de
                 productos.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         <button
