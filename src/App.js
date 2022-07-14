@@ -7,7 +7,18 @@ import "./App.css";
 
 function App() {
   return (
+    <>
     <div className="App">
+    <p className="radial rUno"></p>
+    <p className="radial rDos"></p>
+    <p className="radial rTres"></p>
+    <p className="radial rCuatro"></p>
+    <p className="radial rCinco"></p>
+    <p className="radial rSeis"></p>
+    <p className="radial rSiete"></p>
+    <p className="radial rOcho"></p>
+    <p className="radial rNueve"></p>
+    <p className="radial rDiez"></p>
       <Header />
       <BrowserRouter>
         <Routes>
@@ -23,6 +34,7 @@ function App() {
       </BrowserRouter>
       <Footer />
     </div>
+    </>
   );
 }
 

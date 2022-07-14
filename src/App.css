@@ -14,8 +14,77 @@
   font-family: Arial, Helvetica, sans-serif; /* No es exactamente esta, luego se cambia*/
   font-size: 15px;
   font-weight: 500;
-  min-height: 100vh;
+  min-height: 111vh;
   color: white;
+  position: relative;
+}
+
+.radial {
+  width: 1100px;
+  height: 1300px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  
+  background: #E3B6F900 ; /* Opción para navegadores antiguos que no soportan el degradado css */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(227,182,249,0.3) 0%,transparent 70%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(227,182,249,0.3)), color-stop(100%,#E3B6F900)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(227,182,249,0.3) 0%,transparent 70%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(227,182,249,0.3) 0%,transparent 70%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(227,182,249,0.3) 0%,transparent 70%); /* IE10+ */
+  background: radial-gradient(ellipse at center, rgba(227,182,249,0.3) 0%,transparent 70%);/* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c',GradientType=1 ); /* IE6-9 versión alternativa con degradado horizontal */
+    
+  }
+
+.rUno {
+  top: 50vh;
+  left: -50%;
+}
+
+.rDos {
+  top: 150vh;
+  right: -50%;
+}
+
+.rTres {
+  top: 250vh;
+  left: -50%;
+}
+
+.rCuatro {
+  top: 350vh;
+  right: -50%;
+}
+
+.rCinco {
+  top: 450vh;
+  left: -50%;
+}
+
+.rSeis {
+  top: 550vh;
+  right: -50%;
+}
+
+.rSiete {
+  top: 650vh;
+  left: -50%;
+}
+
+.rOcho {
+  top: 750vh;
+  right: -50%;
+}
+
+.rNueve {
+  top: 850vh;
+  left: -50%;
+}
+
+.rDiez {
+  top: 950vh;
+  right: -50%;
 }
 
 .error404 {
