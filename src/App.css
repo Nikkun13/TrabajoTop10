@@ -17,12 +17,12 @@
   min-height: 111vh;
   color: white;
   position: relative;
+  overflow: hidden;
 }
 
 .radial {
   width: 1100px;
   height: 1300px;
-  overflow: hidden;
   position: absolute;
   z-index: 0;
   
