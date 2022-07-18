@@ -1,6 +1,15 @@
 import "./Contact.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { useState } from "react";
+
 const Contact = () => {
+  const [mensaje, setMensaje] = useState("Copiar email");
+  const copiar = () => {
+    setMensaje("¡eMail copiado!");
+    setTimeout(() => {
+      setMensaje("Copiar email");
+    }, 3000);
+  };
   return (
     <div id="contacto">
       <div className="escribenos">
@@ -11,7 +20,9 @@ const Contact = () => {
         <h5 className="contactMail">
           ortizpellegrinifrancisco@gmail.com
           <CopyToClipboard text="ortizpellegrinifrancisco@gmail.com">
-            <button className="mail">Copiar Mail</button>
+            <button className="mail" onClick={copiar}>
+              {mensaje}
+            </button>
           </CopyToClipboard>
         </h5>
       </div>
@@ -43,7 +54,7 @@ const Contact = () => {
               <li className="Email">
                 <input
                   className="mailForm"
-                  placeholder="Email"
+                  placeholder="E-mail"
                   type="email"
                   id="mail"
                   name="user_mail"
@@ -53,7 +64,7 @@ const Contact = () => {
               <li className="Phone">
                 <input
                   className="telephoneForm"
-                  placeholder="Telefono"
+                  placeholder="Teléfono"
                   type="number"
                   id="telephone"
                   name="user_telephone"
@@ -71,14 +82,9 @@ const Contact = () => {
                 ></textarea>
               </li>
 
-              <li>
-                <label>
-                  <input type="checkbox" />
-                </label>
-                <label for="check1">Check me!</label>
-              </li>
-
-              <button className="Button">Enviar</button>
+              <button type="submit" className="Button">
+                Enviar
+              </button>
             </ul>
           </form>
         </div>
