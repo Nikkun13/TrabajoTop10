@@ -35,7 +35,7 @@ const Home = () => {
             />
             <div className="areaPlayPause">
               <button className="botonPlayPause" onClick={playPause}>
-                ││
+              ❚❚
               </button>
             </div>
           </>
@@ -58,11 +58,21 @@ const Home = () => {
         <div className="areaVolumen">
           {volOnOff === 0 ? (
             <button className="botonVolumen" onClick={volumenOnOff}>
-              On Volumen
+              <div className="barras">
+                <div className="barraUno prendida"></div>
+                <div className="barraDos prendida"></div>
+                <div className="barraTres prendida"></div>
+                <div className="barraCuatro prendida"></div>
+              </div>
             </button>
           ) : (
             <button className="botonVolumen" onClick={volumenOnOff}>
-              Off Volumen
+              <div className="barras">
+                <div className="barraUno apagada"></div>
+                <div className="barraDos apagada"></div>
+                <div className="barraTres apagada"></div>
+                <div className="barraCuatro apagada"></div>
+              </div>
             </button>
           )}
         </div>

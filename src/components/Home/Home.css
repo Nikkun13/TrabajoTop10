@@ -13,8 +13,8 @@
 }
 
 .areaPlayPause {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,8 +43,8 @@
 }
 
 .areaVolumen {
-    width: 10vw;
-    height: 10vw;
+    width: 50px;
+    height: 50px;
     position: absolute;
     bottom: 5vw;
     left: 5vw;
@@ -62,4 +62,54 @@
     background-color: transparent;
     color: white;
     font-size: 15px;
+}
+
+.barras {
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+.barraUno {
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+    height: 35px;
+    width: 4px;
+    border-radius: 3px;
+}
+
+.barraDos {
+    position: absolute;
+    bottom: 0;
+    left: 13px;
+    height: 21px;
+    width: 4px;
+    border-radius: 3px;
+}
+
+.barraTres {
+    position: absolute;
+    bottom: 0;
+    left: 23px;
+    height: 29px;
+    width: 4px;
+    border-radius: 3px;
+}
+
+.barraCuatro {
+    position: absolute;
+    bottom: 0;
+    left: 33px;
+    height: 13px;
+    width: 4px;
+    border-radius: 3px;
+}
+
+.prendida {
+    background-color: #E3B6F9;
+}
+
+.apagada {
+    background-color: #6D7280;
 }
