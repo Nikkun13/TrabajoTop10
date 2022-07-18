@@ -4,6 +4,7 @@
   text-align: center;
   position: absolute;
   bottom: 0;
+  z-index: 99999999999999;
 }
 
 .footerSection {
@@ -19,6 +20,24 @@
 
 .redes {
   display: flex;
+  z-index: 1;
+  justify-content: space-between;
+}
+.redes button {
+  width: 7vh;
+  height: 7vh;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 2px solid #e3b6f9;
+}
+.redes button svg {
+  fill: #e3b6f9;
+}
+.redes button:hover {
+  background-color: #e3b6f9;
+}
+.redes button:hover svg {
+  fill: #111827;
 }
 .siguenos {
   display: flex;
