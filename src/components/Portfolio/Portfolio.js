@@ -77,33 +77,46 @@ const Portfolio = () => {
       </div>
       {/*Fin carrusel */}
       <div className="separacion seccion">
-        <spam className="productora primerRenglon">
+        <marquee
+          scrolldelay="80"
+          scrollamount="30"
+          className="productora primerRenglon"
+        >
           <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISIAL</b>
-        </spam>
+        </marquee>
         <br />
-        <spam className="productora segundoRenglon">
-          PRODUCTORA <b>AUDIOVISUAL</b>. PRODUCTORA <b>AUDIOVISIAL</b>
-        </spam>
-        <br />
-        <spam className="productora tercerRenglon">
+        <marquee
+          direction="right"
+          scrolldelay="100"
+          scrollamount="30"
+          className="productora segundoRenglon"
+        >
           <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISIAL</b>
-        </spam>
+        </marquee>
+        <br />
+        <marquee
+          scrolldelay="120"
+          scrollamount="30"
+          className="productora tercerRenglon"
+        >
+          <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISIAL</b>
+        </marquee>
         <br />
       </div>
 
       <div className="seccion">
         <div className="videoDrone d-md-block">
-        <ReactPlayer
-          url={require("../../media/videos/videoBicicleta.mp4")}
-          width="100%"
-          height="100%"
-          controls
-        />
-        <div className="textoDrone">
-          <p className="tituloUnoDrone">Exteriores</p>
-          <h3 className="tituloDosDrone">Toma de drone</h3>
-          <p className="tituloUnoDrone">¿Tienes dudas? ¡Contáctanos!</p>
-        </div>
+          <ReactPlayer
+            url={require("../../media/videos/videoBicicleta.mp4")}
+            width="100%"
+            height="100%"
+            controls
+          />
+          <div className="textoDrone">
+            <p className="tituloUnoDrone">Exteriores</p>
+            <h3 className="tituloDosDrone">Toma de drone</h3>
+            <p className="tituloUnoDrone">¿Tienes dudas? ¡Contáctanos!</p>
+          </div>
         </div>
       </div>
 
