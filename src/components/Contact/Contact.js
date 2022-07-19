@@ -20,9 +20,7 @@ const Contact = () => {
         <h5 className="contactMail">
           ortizpellegrinifrancisco@gmail.com
           <CopyToClipboard text="ortizpellegrinifrancisco@gmail.com">
-            <button className="mail" onClick={copiar}>
-              {mensaje}
-            </button>
+            <button className="mail">{mensaje}</button>
           </CopyToClipboard>
         </h5>
       </div>
