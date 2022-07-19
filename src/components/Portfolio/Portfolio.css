@@ -1,65 +1,62 @@
 .portfolioSeccion {
-    padding: 100px 0 0 0;
-    width: 100%;
+  padding: 100px 0 0 0;
+  width: 100%;
 }
 
 .separacion {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .productora {
-    font-size: 64px;
-    width: 100%;
-    padding: 10px;
-    white-space: nowrap;
-    position: relative;
+  font-size: 64px;
+  width: 100%;
+  padding: 10px;
+  white-space: nowrap;
+  position: relative;
 }
 
 .primerRenglon {
-  left: -50px;
   -webkit-text-stroke: 2px #9ca3af;
-    color: transparent;
+  color: transparent;
 }
 
 .segundoRenglon {
-    left: -240px;
   color: #9ca3af;
 }
 
 .tercerRenglon {
-    left: -150px;
   -webkit-text-stroke: 2px #9ca3af;
-    color: transparent;
+  color: transparent;
 }
 
 .videoDrone {
-    position: relative;
+  position: relative;
 }
 
 .textoDrone {
-    position: absolute;
-    -webkit-text-stroke: 0.5px black;
-    bottom: 3.25rem;
-    left: 2%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: start;
+  position: absolute;
+  -webkit-text-stroke: 0.5px black;
+  bottom: 3.25rem;
+  left: 2%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: start;
 }
 
 .tituloUnoDrone {
-    font-size: 30px;
-    margin: 0.5rem;
+  font-size: 30px;
+  margin: 0.5rem;
 }
 
 .tituloDosDrone {
-    font-size: 60px;
-    margin: 0.5rem;
+  font-size: 60px;
+  margin: 0.5rem;
 }
 
 .nombreTabla {
-    font-size: 60px;
-    padding-bottom: 200px;
+  font-size: 60px;
+  padding-bottom: 200px;
 }
 
 .porcentajeTabla {

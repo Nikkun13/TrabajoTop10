@@ -33,10 +33,10 @@ const Home = () => {
               loop
               volume={`${volOnOff}`}
             />
-            <div className="areaPlayPause">
-              <button className="botonPlayPause" onClick={playPause}>
-              ❚❚
-              </button>
+            <div className="areaPlayPause" onClick={playPause}>
+              <div className="areaButton">
+                <button className="botonPlayPause">❚❚</button>
+              </div>
             </div>
           </>
         ) : (
@@ -48,10 +48,10 @@ const Home = () => {
               loop
               volume={`${volOnOff}`}
             />
-            <div className="areaPlayPause">
-              <button className="botonPlayPause" onClick={playPause}>
-                ▶
-              </button>
+            <div className="areaPlayPause" onClick={playPause}>
+              <div className="areaButton">
+                <button className="botonPlayPause">▶</button>
+              </div>
             </div>
           </>
         )}
