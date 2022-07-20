@@ -23,7 +23,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/Portfolio" element={<PortfolioPage />} />
+          <Route path="/portfolio/:trabajoId" element={<PortfolioPage />} />
           <Route
             path="*"
             element={

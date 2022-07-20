@@ -25,14 +25,17 @@ const Home = () => {
       <div className="areaVideo">
         {playi === true ? (
           <>
+          <div className="react-player">
             <ReactPlayer
               url={require("../../media/videos/videoBicicleta.mp4")}
-              width="100%"
-              height="100%"
+              width="auto"
+              height="140%"
               playing
               loop
               volume={`${volOnOff}`}
+              className="videoR"
             />
+            </div>
             <div className="areaPlayPause" onClick={playPause}>
               <div className="areaButton">
                 <button className="botonPlayPause">❚❚</button>
@@ -41,13 +44,16 @@ const Home = () => {
           </>
         ) : (
           <>
+           <div className="react-player">
             <ReactPlayer
               url={require("../../media/videos/videoBicicleta.mp4")}
-              width="100%"
-              height="100%"
+              width="auto"
+              height="140%"
               loop
               volume={`${volOnOff}`}
+              className="videoR"
             />
+            </div>
             <div className="areaPlayPause" onClick={playPause}>
               <div className="areaButton">
                 <button className="botonPlayPause">▶</button>
@@ -80,6 +86,10 @@ const Home = () => {
         {/* Me volvi loco porque no fucionaba bien el autoplay, buscando buscando encontre el porque...
             Chrome desactiva el autoplay de los videos que tienen volumen, probe poniendo el volumen en 0 y
             funciona bien. Asi que si el video de Fran tiene volumen, no puede tener autoplay, una u otra. */}
+      {/* Hice lo que pude para que la altura del video fuera igual a la de la pantalla,
+      no era tan facil como poner cover y nada mas, no se si quedo bien, y no se sirve para el mobile creo
+      ya que no pude probar mucho. Depende el tamaño del video de Fran hay que cambiar la altura
+      ya que talvez no quede bien con 140% */}
       </div>
     </div>
   );

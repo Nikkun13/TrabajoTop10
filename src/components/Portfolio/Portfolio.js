@@ -1,5 +1,6 @@
 import "./Portfolio.css";
 import ReactPlayer from "react-player";
+import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
   return (
@@ -11,11 +12,13 @@ const Portfolio = () => {
       >
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
+          <Link to={`/portfolio/trabajoUno`}>
             <img
               src="./images/carrusel-img-1.png"
               class="d-block w-100"
               alt="..."
             />
+          </Link>
             <div class="carruselInfo d-md-block">
               <span className="textoCarrusel">FOTOGRAFÍA 1 | PRODUCTO </span>
               <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
@@ -26,11 +29,13 @@ const Portfolio = () => {
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
+          <Link to={`/portfolio/trabajoDos`}>
             <img
               src="./images/carrusel-img-1.png"
               class="d-block w-100"
               alt="..."
             />
+            </Link>
             <div class="carruselInfo d-md-block">
               <span className="textoCarrusel">FOTOGRAFÍA 2 | PRODUCTO </span>
               <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
@@ -41,11 +46,13 @@ const Portfolio = () => {
             </div>
           </div>
           <div class="carousel-item">
+          <Link to={`/portfolio/trabajoTres`}>
             <img
               src="./images/carrusel-img-1.png"
               class="d-block w-100"
               alt="..."
             />
+            </Link>
             <div class="carruselInfo d-md-block">
               <span className="textoCarrusel">FOTOGRAFÍA 3 | PRODUCTO </span>
               <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
