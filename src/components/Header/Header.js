@@ -19,6 +19,7 @@ const Header = () => {
         <CopyToClipboard text={`${window.location.origin}`}>
           <p className="compartir">COMPARTIR</p>
         </CopyToClipboard>
+
         {/* <NavbarBurger open={open} />
         <MenuButton open={open} handleClick={handleClick} /> */}
       </div>

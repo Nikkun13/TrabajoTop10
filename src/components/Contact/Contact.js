@@ -5,10 +5,18 @@ import { useState } from "react";
 const Contact = () => {
   const [mensaje, setMensaje] = useState("Copiar email");
   const copiar = () => {
-    setMensaje("¡eMail copiado!");
+    setMensaje("¡email copiado!");
     setTimeout(() => {
       setMensaje("Copiar email");
     }, 3000);
+  };
+
+  const burbuja = (e) => {
+    let x = e.clientX;
+    let y = e.clientY;
+
+    e.target.children[0].style.top = y - 50 + "px";
+    e.target.children[0].style.left = x - 100 + "px";
   };
   return (
     <div id="contacto">
@@ -17,12 +25,16 @@ const Contact = () => {
           ¿Tienes un proyecto o idea en mente que necesites ayuda?
         </h4>
         <h2 className="contactTituloDos">¡Escríbenos!</h2>
-        <h5 className="contactMail">
-          ortizpellegrinifrancisco@gmail.com
-          <CopyToClipboard text="ortizpellegrinifrancisco@gmail.com">
-            <button className="mail">{mensaje}</button>
-          </CopyToClipboard>
-        </h5>
+        <div
+          style={{ width: "100%", display: "flex", justifyContent: "center" }}
+        >
+          <h5 className="contactMail" onMouseMove={burbuja} onClick={copiar}>
+            ortizpellegrinifrancisco@gmail.com
+            <CopyToClipboard text="ortizpellegrinifrancisco@gmail.com">
+              <button className="mail">{mensaje}</button>
+            </CopyToClipboard>
+          </h5>
+        </div>
       </div>
 
       {/* */}
