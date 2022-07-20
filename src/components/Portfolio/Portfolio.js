@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
+
   return (
     <div id="portfolio" className="portfolioSeccion">
       <div
@@ -12,7 +13,7 @@ const Portfolio = () => {
       >
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-          <Link to={`/portfolio/trabajoUno`}>
+          <Link to={`/portfolio/1`}>
             <img
               src="./images/carrusel-img-1.png"
               class="d-block w-100"
@@ -29,7 +30,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-          <Link to={`/portfolio/trabajoDos`}>
+          <Link to={`/portfolio/2`}>
             <img
               src="./images/carrusel-img-1.png"
               class="d-block w-100"
@@ -46,7 +47,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div class="carousel-item">
-          <Link to={`/portfolio/trabajoTres`}>
+          <Link to={`/portfolio/3`}>
             <img
               src="./images/carrusel-img-1.png"
               class="d-block w-100"
@@ -89,7 +90,7 @@ const Portfolio = () => {
           scrollamount="30"
           className="productora primerRenglon"
         >
-          <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISIAL</b>
+          <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISUAL</b>
         </marquee>
         <br />
         <marquee
@@ -98,7 +99,7 @@ const Portfolio = () => {
           scrollamount="30"
           className="productora segundoRenglon"
         >
-          <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISIAL</b>
+          <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISUAL</b>
         </marquee>
         <br />
         <marquee
@@ -106,7 +107,7 @@ const Portfolio = () => {
           scrollamount="30"
           className="productora tercerRenglon"
         >
-          <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISIAL</b>
+          <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISUAL</b>
         </marquee>
         <br />
       </div>

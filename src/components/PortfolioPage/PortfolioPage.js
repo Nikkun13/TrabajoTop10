@@ -4,12 +4,12 @@ import PortfolioDetail from "../PortfolioDetail/PortfolioDetail";
 
 const PortfolioPage = () => {
 
-    const { TrabajoId } = useParams()
+    const { id } = useParams()
 
     return (
         <div>
-            <PortfolioDetail id={TrabajoId}/>
-            <div>Footer Portfolio</div>
+            {/* <PortfolioDetail id={id}/> */}
+            <div>Footer Portfolio {id}</div>
         </div>
     )
 }

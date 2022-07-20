@@ -2,7 +2,9 @@ import "./PortfolioDetail.css";
 
 const PortfolioDetail = (id) => {
 
-return (<div>Trabajo {id}</div>)
+return (
+    <div>Trabajo {id}</div>
+    )
 
 }
 

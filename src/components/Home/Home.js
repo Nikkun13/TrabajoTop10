@@ -21,7 +21,8 @@ const Home = () => {
   };
 
   return (
-    <div id="inicio" className="seccionNoTop">
+    <div id="inicio">
+    <div  className="seccionNoTop">
       <div className="areaVideo">
         {playi === true ? (
           <>
@@ -91,6 +92,7 @@ const Home = () => {
       ya que no pude probar mucho. Depende el tamaño del video de Fran hay que cambiar la altura
       ya que talvez no quede bien con 140% */}
       </div>
+    </div>
     </div>
   );
 };

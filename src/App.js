@@ -1,5 +1,5 @@
-import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,11 +19,11 @@ function App() {
     <p className="radial rOcho"></p>
     <p className="radial rNueve"></p>
     <p className="radial rDiez"></p>
-      <Header />
+    <Header />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/portfolio/:trabajoId" element={<PortfolioPage />} />
+          <Route path="/portfolio/:id" element={<PortfolioPage />} />
           <Route
             path="*"
             element={
