@@ -1,52 +1,52 @@
 .header {
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 1000;
-    position: fixed;
-    width: 100%;
-    /* background-color: blue; */
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  /* background-color: blue; */
 }
 
 .contenedorHeader {
-    height: 100%;
-    width: 100%;
-    position: relative;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .compartir {
-    cursor: pointer;
-    margin: 2vh;
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #9CA3AF;
+  cursor: pointer;
+  margin: 2vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #9ca3af;
 }
 
 .compartir::before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    opacity: 0;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #E3B6F9;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.3s ease-in-out;
-    bottom: -10px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #e3b6f9;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease-in-out;
+  bottom: -10px;
 }
 
 .compartir:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .logoHeader {
-    position: absolute;
-    height: 8vh;
-    left: 4vh;
-    z-index: 1001;
+  position: absolute;
+  height: 8vh;
+  left: 4vh;
+  z-index: 1001;
 }
