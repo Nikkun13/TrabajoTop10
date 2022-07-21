@@ -1,17 +1,44 @@
-.anterior {
-    padding: 70px;
-    width: 30vw;
-    text-align: left;
+.imagenPortfolio {
+    height: 100vh;
+    width: 100vw;
 }
 
-.central {
-    padding: 70px;
-    width: 40vw;
+.centrado {
+	list-style: none;
+    font-size: 0;
+    padding: 0;
+}
+
+.option {
+    display:inline-block;
+    font-size: 1.5rem;
+    width: 33.33%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding:5px 0;
+}
+
+.primerCuadro {
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    padding: 5px;
     text-align: center;
 }
 
-.posterior {
-    padding: 70px;
-    width: 30vw;
-    text-align: right;
+.segundoCuadro {
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.tercerCuadro {
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
 }

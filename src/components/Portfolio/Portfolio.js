@@ -32,7 +32,7 @@ const Portfolio = () => {
           <div className="carousel-item" data-bs-interval="2000">
           <Link to={`/portfolio/2`}>
             <img
-              src="./images/carrusel-img-1.png"
+              src="./images/PruebaDos.jpg"
               className="d-block w-100"
               alt="..."
             />
@@ -49,7 +49,7 @@ const Portfolio = () => {
           <div className="carousel-item">
           <Link to={`/portfolio/3`}>
             <img
-              src="./images/carrusel-img-1.png"
+              src="./images/PruebaTres.jpg"
               className="d-block w-100"
               alt="..."
             />
