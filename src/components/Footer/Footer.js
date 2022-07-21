@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className="redes">
+      <div className="redes" id="redes">
         <div className="siguenos">
           <h5 className="contForm">Síguenos</h5>
           <div className="redes">
@@ -65,7 +65,7 @@ const Footer = () => {
 
       <div className="footerSection">
         <span>CREDITOS</span>
-        <span>.....DERECHOS RESERVADOS| 2022</span>
+        <span>DERECHOS RESERVADOS | 2022</span>
         <span>POLITICA DE PRIVACIDAD</span>
       </div>
     </>

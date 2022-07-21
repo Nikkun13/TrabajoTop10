@@ -9,6 +9,12 @@
   font-size: 2.5rem;
   z-index: 9999999999;
 }
+@media (max-width: 767px) {
+  .floatWpp {
+    top: 73vh;
+    right: 0vh;
+  }
+}
 .floatWpp:hover {
   background-color: #e3b6f9;
   transition: all 1s ease;
