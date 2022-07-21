@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
       <a
         href="https://api.whatsapp.com/send?phone=543512609595&text=Hola%21%20"
         target="blank"
-        class="floatWpp"
+        className="floatWpp"
       >
         <svg
           width="33"

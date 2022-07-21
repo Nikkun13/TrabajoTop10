@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <navbar className="navbar">
+    <div className="navbar">
       <ul>
         <li>
           <a className="" href="#inicio">
@@ -30,7 +30,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-    </navbar>
+    </div>
   );
 };
 

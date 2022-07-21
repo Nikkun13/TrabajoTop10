@@ -1,0 +1,17 @@
+.anterior {
+    padding: 70px;
+    width: 30vw;
+    text-align: left;
+}
+
+.central {
+    padding: 70px;
+    width: 40vw;
+    text-align: center;
+}
+
+.posterior {
+    padding: 70px;
+    width: 30vw;
+    text-align: right;
+}

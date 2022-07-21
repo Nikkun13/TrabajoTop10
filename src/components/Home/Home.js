@@ -33,7 +33,7 @@ const Home = () => {
               height="140%"
               playing
               loop
-              volume={`${volOnOff}`}
+              volume={volOnOff}
               className="videoR"
             />
             </div>
@@ -51,7 +51,7 @@ const Home = () => {
               width="auto"
               height="140%"
               loop
-              volume={`${volOnOff}`}
+              volume={volOnOff}
               className="videoR"
             />
             </div>
