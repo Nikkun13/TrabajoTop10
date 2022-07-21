@@ -54,7 +54,7 @@ const Portfolio = () => {
             <Link className="imgPortfolio" to={`/portfolio/2`}>
               <img
                 onMouseMove={burbuja}
-                src="./images/carrusel-img-1.png"
+                src="./images/PruebaDos.jpg"
                 style={{ height: "100vh", width: "100%" }}
                 className="w-100"
                 alt="..."
@@ -74,7 +74,7 @@ const Portfolio = () => {
             <Link className="imgPortfolio" to={`/portfolio/3`}>
               <img
                 onMouseMove={burbuja}
-                src="./images/carrusel-img-1.png"
+                src="./images/PruebaTres.jpg"
                 className=" w-100"
                 style={{ height: "100vh", width: "100%" }}
                 alt="..."
