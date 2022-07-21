@@ -50,3 +50,20 @@
   left: 4vh;
   z-index: 1001;
 }
+.copiado {
+  margin-left: 1rem;
+  font-weight: 700;
+  width: 8rem;
+  font-size: 20px;
+  height: 8rem;
+  z-index: 0;
+
+  border-color: transparent;
+  border-radius: 90px;
+  color: #0e131f;
+  background-color: #e3b6f9;
+  right: 50px;
+  position: fixed;
+  animation: 0.3s ease-out;
+  transition: all 0.3s linear;
+}

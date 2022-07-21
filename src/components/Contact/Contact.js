@@ -20,7 +20,7 @@ const Contact = () => {
   };
   return (
     <div id="contacto">
-      <div className="escribenos">
+      <div className="escribenos seccion">
         <h4 className="contactTituloUno">
           ¿Tienes un proyecto o idea en mente que necesites ayuda?
         </h4>

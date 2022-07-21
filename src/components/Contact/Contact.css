@@ -8,7 +8,7 @@
 }
 
 .contactTituloDos {
-  font-size: 148px;
+  font-size: 125px;
   padding: 20px;
 }
 
@@ -17,15 +17,38 @@
   color: #e3b6f9;
   cursor: pointer;
   padding: 20px;
+
   z-index: 1;
   position: relative;
 }
 .formAndContact {
-  margin-top: 3rem;
+  gap: 5rem;
+  margin-top: 3.5rem;
   display: flex;
   justify-content: space-between;
   margin-left: 5.5rem;
   margin-right: 5rem;
+}
+@media (max-width: 763px) {
+  .contactTituloDos {
+    font-size: 9.5vh;
+    padding: 0px;
+  }
+  .contacto {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .formAndContact {
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+  }
+  .contactMail {
+    font-size: 3.5vh;
+  }
 }
 .contacto {
   display: flex;
@@ -133,6 +156,7 @@ textarea:focus {
   font-size: 20px;
   z-index: 0;
   opacity: 1;
+  animation: 0.3s ease-out;
   transition: all 0.3s linear;
   cursor: none;
 }
@@ -151,7 +175,8 @@ textarea:focus {
   background-color: #e3b6f9;
   z-index: 0;
   opacity: 0;
-  transition: all 0.3s linear;
+
   position: fixed;
-  animation: fadeIn;
+  animation: 0.3s ease-out;
+  transition: all 0.3s linear;
 }

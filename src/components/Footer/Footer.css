@@ -24,8 +24,8 @@
   justify-content: space-between;
 }
 .redes button {
-  width: 7vh;
-  height: 7vh;
+  width: 3rem;
+  height: 3rem;
   background-color: transparent;
   border-radius: 40px;
   border: 2px solid #e3b6f9;
@@ -45,4 +45,17 @@
   justify-content: space-around;
   margin-bottom: 2rem;
   margin-left: 5rem;
+}
+@media (max-width: 767px) {
+  .footerSection {
+    margin-left: 0vh;
+    margin-right: 0vh;
+    padding: 1.5rem;
+  }
+  #redes {
+    justify-content: center;
+  }
+  .siguenos {
+    margin-left: 0rem;
+  }
 }

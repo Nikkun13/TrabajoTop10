@@ -1,8 +1,16 @@
 import "./Portfolio.css";
 import ReactPlayer from "react-player";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
+  const burbuja = (e) => {
+    if ((e.target.className = "d-block")) {
+      let x = e.clientX;
+      let y = e.clientY;
+      e.target.nextSibling.style.top = y - 100 + "px";
+      e.target.nextSibling.style.left = x - 800 + "px";
+    }
+  };
 
   return (
     <div id="portfolio" className="portfolioSeccion">
@@ -12,14 +20,23 @@ const Portfolio = () => {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="10000">
-          <Link to={`/portfolio/1`}>
-            <img
-              src="./images/carrusel-img-1.png"
-              className="d-block w-100"
-              alt="..."
-            />
-          </Link>
+          <div
+            className="carousel-item active"
+            data-bs-interval="10000"
+            style={{ height: "100vh" }}
+          >
+            <div>
+              <Link className="imgPortfolio" to={"/portfolio/1"}>
+                <img
+                  onMouseMove={burbuja}
+                  src="./images/carrusel-img-1.png"
+                  className="w-100"
+                  style={{ height: "100vh", width: "100%" }}
+                  alt="..."
+                />
+                <button className="burbuja">Ver proyecto</button>
+              </Link>
+            </div>
             <div className="carruselInfo d-md-block">
               <span className="textoCarrusel">FOTOGRAFÍA 1 | PRODUCTO </span>
               <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
@@ -29,13 +46,20 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-          <div className="carousel-item" data-bs-interval="2000">
-          <Link to={`/portfolio/2`}>
-            <img
-              src="./images/PruebaDos.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
+          <div
+            className="carousel-item"
+            data-bs-interval="2000"
+            style={{ height: "100vh" }}
+          >
+            <Link className="imgPortfolio" to={`/portfolio/2`}>
+              <img
+                onMouseMove={burbuja}
+                src="./images/PruebaDos.jpg"
+                style={{ height: "100vh", width: "100%" }}
+                className="w-100"
+                alt="..."
+              />
+              <button className="burbuja">Ver proyecto</button>
             </Link>
             <div className="carruselInfo d-md-block">
               <span className="textoCarrusel">FOTOGRAFÍA 2 | PRODUCTO </span>
@@ -46,13 +70,16 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-          <div className="carousel-item">
-          <Link to={`/portfolio/3`}>
-            <img
-              src="./images/PruebaTres.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
+          <div className="carousel-item" style={{ height: "100vh" }}>
+            <Link className="imgPortfolio" to={`/portfolio/3`}>
+              <img
+                onMouseMove={burbuja}
+                src="./images/PruebaTres.jpg"
+                className=" w-100"
+                style={{ height: "100vh", width: "100%" }}
+                alt="..."
+              />
+              <button className="burbuja">Ver proyecto</button>
             </Link>
             <div className="carruselInfo d-md-block">
               <span className="textoCarrusel">FOTOGRAFÍA 3 | PRODUCTO </span>
@@ -70,7 +97,10 @@ const Portfolio = () => {
           data-bs-target="#carouselExampleInterval"
           data-bs-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
@@ -79,7 +109,10 @@ const Portfolio = () => {
           data-bs-target="#carouselExampleInterval"
           data-bs-slide="next"
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>
@@ -99,7 +132,9 @@ const Portfolio = () => {
           scrollamount="30"
           className="productora segundoRenglon"
         >
-          <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISUAL</b>
+          <p>
+            PRODUCTORA <b>AUDIOVISUAL.</b> PRODUCTORA <b>AUDIOVISUAL.</b>
+          </p>
         </marquee>
         <br />
         <marquee
@@ -109,6 +144,7 @@ const Portfolio = () => {
         >
           <b>PRODUCTORA AUDIOVISUAL. PRODUCTORA AUDIOVISUAL</b>
         </marquee>
+
         <br />
       </div>
 
@@ -132,34 +168,34 @@ const Portfolio = () => {
         <h1 className="nombreTabla">¿POR QUÉ UN VIDEO?</h1>
         <table>
           <tbody>
-          <tr className="porcentajeTabla">
-            <th>80%</th>
-            <th>90%</th>
-            <th>64%</th>
-            <th>100%</th>
-          </tr>
-          <tr className="textoTabla">
-            <td className="margenTabla">
-              de tráfico por internet será representado por videos en el año
-              2022.
-            </td>
-            <td className="margenTabla">
-              de los consumidores son influenciados en sus decisiones por un
-              video.{" "}
-            </td>
-            <td className="margenTabla">
-              de los consumidoresd prefieren comprar después de ver un video.{" "}
-            </td>
-            <td className="margenTabla">
-              es lo que aumenta según Youtube, el Mobile Video cada año.
-            </td>
-          </tr>
-          <tr className="fuentesTabla">
-            <td>FUENTES: Forbes</td>
-            <td>FUENTES: Forbes</td>
-            <td>FUENTES: Forbes</td>
-            <td>FUENTES: Forbes</td>
-          </tr>
+            <tr className="porcentajeTabla">
+              <th>80%</th>
+              <th>90%</th>
+              <th>64%</th>
+              <th>100%</th>
+            </tr>
+            <tr className="textoTabla">
+              <td className="margenTabla">
+                de tráfico por internet será representado por videos en el año
+                2022.
+              </td>
+              <td className="margenTabla">
+                de los consumidores son influenciados en sus decisiones por un
+                video.{" "}
+              </td>
+              <td className="margenTabla">
+                de los consumidoresd prefieren comprar después de ver un video.{" "}
+              </td>
+              <td className="margenTabla">
+                es lo que aumenta según Youtube, el Mobile Video cada año.
+              </td>
+            </tr>
+            <tr className="fuentesTabla">
+              <td>FUENTES: Forbes</td>
+              <td>FUENTES: Forbes</td>
+              <td>FUENTES: Forbes</td>
+              <td>FUENTES: Forbes</td>
+            </tr>
           </tbody>
         </table>
       </div>

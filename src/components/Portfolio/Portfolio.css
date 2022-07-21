@@ -16,16 +16,16 @@
 }
 
 .primerRenglon {
-  -webkit-text-stroke: 2px #9ca3af;
+  -webkit-text-stroke: 1px #e3b6f9;
   color: transparent;
 }
 
 .segundoRenglon {
-  color: #9ca3af;
+  color: #e3b6f9;
 }
 
 .tercerRenglon {
-  -webkit-text-stroke: 2px #9ca3af;
+  -webkit-text-stroke: 1px #e3b6f9;
   color: transparent;
 }
 
@@ -91,4 +91,39 @@
 }
 .textoCarrusel {
   margin: 0.5rem;
+}
+
+.burbuja {
+  margin-left: 1rem;
+  font-weight: 700;
+  width: 0rem;
+  font-size: 0px;
+  height: 0rem;
+  border-color: transparent;
+  border-radius: 90px;
+  color: #0e131f;
+  background-color: #e3b6f9;
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s linear;
+}
+.imgPortfolio:hover .burbuja {
+  width: 8rem;
+  height: 8rem;
+  font-size: 20px;
+  z-index: 1;
+  opacity: 1;
+  animation: 0.3s ease-out;
+  transition: all 0.3s linear;
+  cursor: none;
+}
+.imgPortfolio:hover {
+  cursor: none;
+}
+.imgPortfolio {
+  position: relative;
+}
+.carruselimg {
+  height: 100vh;
 }
