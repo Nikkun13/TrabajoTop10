@@ -13,6 +13,10 @@ const PortfolioPage = () => {
     const [imgP, setImgP] = useState("")
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+    useEffect(() => {
         if (id === 1 ) {
             setImgP(imgUno);
         } else if (id === 2) {

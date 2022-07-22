@@ -1,0 +1,17 @@
+.areaAlCielo {
+    display: inline-block;
+    padding: 10px;
+    background-color: #E3B6F9;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.botonAlCielo {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}

@@ -7,6 +7,7 @@ import Contact from "../Contact/Contact"
 import Testimonials from "../Testimonials/Testimonials";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import ToTheTop from "../ToTheTop/ToTheTop";
 
 
 const Main = () => {
@@ -14,6 +15,7 @@ const Main = () => {
   return (
     <>
       <WhatsAppButton />
+      <ToTheTop />
       <Header />
       <div className="main">
         <Home />
