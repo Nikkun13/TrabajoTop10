@@ -31,7 +31,7 @@ const Portfolio = () => {
                   onMouseMove={burbuja}
                   src="./images/carrusel-img-1.png"
                   className="w-100"
-                  style={{ height: "100vh", width: "100%" }}
+                  style={{ height: "100vh", width: "100%", objectFit: "cover" }}
                   alt="..."
                 />
                 <button className="burbuja">Ver proyecto</button>
@@ -55,7 +55,7 @@ const Portfolio = () => {
               <img
                 onMouseMove={burbuja}
                 src="./images/PruebaDos.jpg"
-                style={{ height: "100vh", width: "100%" }}
+                style={{ height: "100vh", width: "100%", objectFit: "cover" }}
                 className="w-100"
                 alt="..."
               />
@@ -76,7 +76,7 @@ const Portfolio = () => {
                 onMouseMove={burbuja}
                 src="./images/PruebaTres.jpg"
                 className=" w-100"
-                style={{ height: "100vh", width: "100%" }}
+                style={{ height: "100vh", width: "100%", objectFit: "cover" }}
                 alt="..."
               />
               <button className="burbuja">Ver proyecto</button>
@@ -158,7 +158,7 @@ const Portfolio = () => {
           />
           <div className="textoDrone">
             <p className="tituloUnoDrone">Exteriores</p>
-            <h3 className="tituloDosDrone">Toma de drone</h3>
+            <h3 className="tituloDosDrone">Toma de drones</h3>
             <p className="tituloUnoDrone">¿Tienes dudas? ¡Contáctanos!</p>
           </div>
         </div>

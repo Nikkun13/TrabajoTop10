@@ -1,26 +1,53 @@
-.navbar {
+.navigation {
+    height: 10vh;
     width: 100%;
-    margin: auto;
-    padding: 2vh 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     background-color: rgba(17, 24, 39, 0.7);
-}
+    color: #E3B6F9;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  }
 
-.navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 50px;
-    position: relative;
-}
-
-.navbar ul li a {
+  .brand-name {
+    grid-column: 1;
     text-decoration: none;
-    color: #9CA3AF;
-}
+    color: #E3B6F9;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    margin-top: -18px;
+  }
 
-.navbar ul li::after {
+  .areaMenu {
+    grid-column: 2 / 6;
+  }
+
+  .areaCompartir {
+    grid-column: 6;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+    align-items: center;
+  }
+
+  .navigation-menu li {
+    list-style-type: none;
+    margin: 1rem 1rem;
+    position: relative;
+  }
+
+  .navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: #9ca3af;
+    padding: 0 2vw;
+  }
+
+  .navigation-menu ul li::after {
     content: "";
     width:8px;
     height:8px;
@@ -34,9 +61,153 @@
     left: 50%;
     transform: translateX(-50%);
     transition: 0.3s ease-in-out;
-
 }
 
-.navbar ul li:hover::after {
+.navigation-menu ul li:hover::after {
     opacity: 1;
 }
+
+  .compartirBoton {
+    color: #9ca3af;
+    cursor: pointer;
+    position: relative;
+    margin-top: -17px;
+  }
+
+  .compartirBoton::after {
+    content: "";
+    width:8px;
+    height:8px;
+    opacity: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #E3B6F9;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s ease-in-out;
+}
+
+.compartirBoton:hover::after {
+    opacity: 1;
+}
+
+  .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #9ca3af;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+
+  .hamburger:hover {
+    background-color: #E3B6F9;
+  }
+
+  .copiado {
+    margin-left: 1rem;
+    font-weight: 700;
+    width: 8rem;
+    font-size: 20px;
+    height: 8rem;
+    z-index: 0;
+  
+    border-color: transparent;
+    border-radius: 90px;
+    color: #0e131f;
+    background-color: #e3b6f9;
+    right: 50px;
+    position: fixed;
+    animation: 0.3s ease-out;
+    transition: all 0.3s linear;
+  }
+
+  .menuFooter {
+    display: none;
+    border-top: 2px solid #E3B6F9;;
+  }
+
+  .redesFooter {
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+  }
+  .redesFooter button {
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 2px solid #e3b6f9;
+  }
+  .redesFooter button svg {
+    fill: #e3b6f9;
+  }
+  .redesFooter button:hover {
+    background-color: #e3b6f9;
+  }
+  .redesFooter button:hover svg {
+    fill: #111827;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navigation-menu ul {
+        display: none;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-color: #EDDDF4;
+        border-top: 1px solid black;
+        z-index: 200;
+    }
+
+    .menuFooter {
+        display: block;
+        padding-top: 2vh;
+    }
+
+    .navigation-menu ul li:hover::after {
+        opacity: 0;
+    }
+
+    .navigation-menu.expanded ul {
+        display: block;
+    }
+
+    .navigation-menu li {
+        text-align: center;
+        margin: 0;
+        height: auto;
+    }
+
+    .navigation-menu li a {
+        color:#E3B6F9;
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .navigation-menu li:hover {
+        background-color: #eee;
+    }
+
+    .compartirBoton {
+        display: none;
+      }
+
+  }

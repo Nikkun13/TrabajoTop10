@@ -12,6 +12,7 @@ const PortfolioPage = () => {
 
     const [imgP, setImgP] = useState("")
 
+
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])

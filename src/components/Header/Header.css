@@ -6,64 +6,10 @@
   z-index: 1000;
   position: fixed;
   width: 100%;
-  /* background-color: blue; */
 }
 
 .contenedorHeader {
   height: 100%;
   width: 100%;
   position: relative;
-}
-
-.compartir {
-  cursor: pointer;
-  margin: 2vh;
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: #9ca3af;
-}
-
-.compartir::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  opacity: 0;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background: #e3b6f9;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: 0.3s ease-in-out;
-  bottom: -10px;
-}
-
-.compartir:hover::before {
-  opacity: 1;
-}
-
-.logoHeader {
-  position: absolute;
-  height: 8vh;
-  left: 4vh;
-  z-index: 1001;
-}
-.copiado {
-  margin-left: 1rem;
-  font-weight: 700;
-  width: 8rem;
-  font-size: 20px;
-  height: 8rem;
-  z-index: 0;
-
-  border-color: transparent;
-  border-radius: 90px;
-  color: #0e131f;
-  background-color: #e3b6f9;
-  right: 50px;
-  position: fixed;
-  animation: 0.3s ease-out;
-  transition: all 0.3s linear;
 }
