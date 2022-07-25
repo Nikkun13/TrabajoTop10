@@ -1,6 +1,8 @@
 import "./Footer.css";
+import useScreenSize from "../../hooks/useScreenSize";
 
 const Footer = () => {
+  const { width } = useScreenSize();
   return (
     <>
       <div className="redes" id="redes">
@@ -63,11 +65,20 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footerSection">
-        <span>CREDITOS</span>
-        <span>DERECHOS RESERVADOS | 2022</span>
-        <span>POLITICA DE PRIVACIDAD</span>
-      </div>
+      {width > 767 ? (
+        <div className="footerSection">
+          <span>CREDITOS</span>
+          <span>DERECHOS RESERVADOS | 2022</span>
+          <span>POLITICA DE PRIVACIDAD</span>
+        </div>
+      ) : (
+        <div
+          style={{ justifyContent: "center", color: "#4B5563" }}
+          className="footerSection"
+        >
+          <span>DERECHOS RESERVADOS | 2022</span>
+        </div>
+      )}
     </>
   );
 };

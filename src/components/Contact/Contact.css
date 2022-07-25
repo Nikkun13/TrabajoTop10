@@ -29,27 +29,7 @@
   margin-left: 5.5rem;
   margin-right: 5rem;
 }
-@media (max-width: 763px) {
-  .contactTituloDos {
-    font-size: 9.5vh;
-    padding: 0px;
-  }
-  .contacto {
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  .formAndContact {
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    justify-content: center;
-  }
-  .contactMail {
-    font-size: 3.5vh;
-  }
-}
+
 .contacto {
   display: flex;
   flex-direction: column;
@@ -104,6 +84,15 @@ li {
 .contForm {
   font-size: 40px;
   color: #e3b6f9;
+}
+.contacto a {
+  z-index: 1;
+  color: #e3b6f9;
+  text-decoration: true;
+  margin-bottom: 1rem;
+}
+.contacto a svg {
+  margin-right: 0.5rem;
 }
 .Button {
   z-index: 1;
@@ -179,4 +168,25 @@ textarea:focus {
   position: fixed;
   animation: 0.3s ease-out;
   transition: all 0.3s linear;
+}
+@media (max-width: 763px) {
+  .contactTituloDos {
+    font-size: 9.5vh;
+    padding: 0px;
+  }
+  .contacto {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .formAndContact {
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+  }
+  .contactMail {
+    font-size: 3.5vh;
+  }
 }
