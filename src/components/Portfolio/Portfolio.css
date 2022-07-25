@@ -49,14 +49,19 @@
   margin: 0.5rem;
 }
 
+.seccion table {
+  margin: 0 5vw;
+}
+
 .tituloDosDrone {
   font-size: 60px;
   margin: 0.5rem;
 }
 
 .nombreTabla {
+  padding-top: 75px;
   font-size: 60px;
-  padding-bottom: 200px;
+  padding-bottom: 125px;
 }
 
 .porcentajeTabla {
@@ -126,4 +131,24 @@
 }
 .carruselimg {
   height: 100vh;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .nombreTabla {
+    font-size: 42px;
+  }
+
+  .porcentajeTabla {
+    font-size: 55px;
+  }
+
+  .textoTabla {
+    font-size: 16px;
+  }
+
+  .fuentesTabla {
+    font-size: 10px;
+  }
+
 }

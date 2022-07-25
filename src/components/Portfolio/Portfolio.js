@@ -181,10 +181,10 @@ const Portfolio = () => {
               </td>
               <td className="margenTabla">
                 de los consumidores son influenciados en sus decisiones por un
-                video.{" "}
+                video.
               </td>
               <td className="margenTabla">
-                de los consumidoresd prefieren comprar después de ver un video.{" "}
+                de los consumidores prefieren comprar después de ver un video.
               </td>
               <td className="margenTabla">
                 es lo que aumenta según Youtube, el Mobile Video cada año.

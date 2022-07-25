@@ -1,7 +1,13 @@
 .logo1 {
-    height: 200px;
     position: absolute;
-    right: 150px;
+    right: 10vw;
+    margin-top: 20px;
+}
+
+.logo1 svg {
+        margin: 0 auto;
+        width: auto;
+       height: 8vh;
 }
 
 .nosotrosBanner {
@@ -14,4 +20,19 @@
     left: 10vh;
     position: relative;
     padding: 100px 0 0 0;
+}
+
+@media screen and (max-width:900px) {
+    .nosotrosDescripcion {
+        font-size: 20px;
+        width: 600px;
+    }
+
+    .nosotrosBanner {
+        font-size: 60px;
+    }
+
+    .logo1 svg {
+       height: 6vh;
+}
 }
