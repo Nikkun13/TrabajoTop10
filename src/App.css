@@ -90,3 +90,9 @@
 .error404 {
   padding: 25vh;
 }
+
+@media screen and (max-width: 1000px) {
+  .App {
+    font-size: 10px;
+  }
+}
