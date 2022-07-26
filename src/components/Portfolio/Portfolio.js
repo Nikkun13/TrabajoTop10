@@ -166,6 +166,7 @@ const Portfolio = () => {
 
       <div className="seccion">
         <h1 className="nombreTabla">¿POR QUÉ UN VIDEO?</h1>
+
         <table>
           <tbody>
             <tr className="porcentajeTabla">

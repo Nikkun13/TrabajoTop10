@@ -1,6 +1,6 @@
 import "./Contact.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useScreenSize from "../../hooks/useScreenSize";
 
 const Contact = () => {
@@ -23,6 +23,7 @@ const Contact = () => {
       e.target.children[0].style.left = x - 80 + "px";
     }
   };
+
   return (
     <div id="contacto">
       <div className="escribenos seccion">

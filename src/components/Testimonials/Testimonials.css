@@ -1,47 +1,58 @@
 .testimonioTitulo {
-    font-size: 60px;
-    padding-top: 50px;
-    padding-bottom: 150px;
+  font-size: 60px;
+  padding-top: 50px;
+  padding-bottom: 150px;
 }
 
 .estrellasPintadas {
-    font-size: 20px;
-    -webkit-text-stroke: 1px #AF45F0;
-    color: #AF45F0;
-    letter-spacing: 10px;
+  font-size: 20px;
+  -webkit-text-stroke: 1px #af45f0;
+  color: #af45f0;
+  letter-spacing: 10px;
 }
 
 .estrellasSinPintar {
-    letter-spacing: 10px;
-    font-size: 20px;
-    -webkit-text-stroke: 1px #AF45F0;
-    color: transparent;
+  letter-spacing: 10px;
+  font-size: 20px;
+  -webkit-text-stroke: 1px #af45f0;
+  color: transparent;
 }
 
 .testimonio {
-    font-size: 32px;
-    margin: 0 25vw;
-    padding-bottom: 50px;
+  font-size: 32px;
+  margin: 0 25vw;
+  padding-bottom: 50px;
 }
 
 .nombreTestimonio {
-    font-size: 16px;
-    color: #AF45F0;
-    padding: 20px;
+  font-size: 16px;
+  color: #af45f0;
+  padding: 20px;
 }
 
-@media screen and (max-width:770px) {
-    .testimonio {
-        font-size: 24px;
-    }
-    .nombreTestimonio {
-        font-size: 14px;
-    }
-    .estrellasPintadas {
-        font-size: 16px;
-    }
-    
-    .estrellasSinPintar {
-        font-size: 16px;
-    }
+@media screen and (max-width: 763px) {
+  .testimonioTitulo {
+    font-size: 32px;
+    padding-bottom: 1.5rem;
+    color: #e3b6f9;
+  }
+  .testimonio {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin: 8vw;
+    padding-bottom: 0px;
+  }
+  .nombreTestimonio {
+    color: #e3b6f9;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .estrellasPintadas {
+    font-size: 16px;
+  }
+
+  .estrellasSinPintar {
+    font-size: 16px;
+  }
 }
