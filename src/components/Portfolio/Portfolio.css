@@ -152,21 +152,17 @@
   .fuentesTabla {
     font-size: 10px;
   }
-<<<<<<< HEAD
-=======
 
   .tituloUnoDrone {
     font-size: 20px;
   }
-  
+
   .tituloDosDrone {
     font-size: 30px;
   }
-
 }
 
 @media screen and (max-width: 700px) {
-
   .tablaVideo {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -181,10 +177,8 @@
   .tituloUnoDrone {
     font-size: 16px;
   }
-  
+
   .tituloDosDrone {
     font-size: 22px;
   }
-
->>>>>>> bfe3cdf1c272ed6ecab45d5e9f70cdbc91e6290b
 }
