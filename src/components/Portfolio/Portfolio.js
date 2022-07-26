@@ -166,6 +166,7 @@ const Portfolio = () => {
 
       <div className="seccion">
         <h1 className="nombreTabla">¿POR QUÉ UN VIDEO?</h1>
+<<<<<<< HEAD
 
         <table>
           <tbody>
@@ -199,6 +200,30 @@ const Portfolio = () => {
             </tr>
           </tbody>
         </table>
+=======
+        <div className="tablaVideo">
+          <div className="celdaTablaVideo">
+            <p className="porcentajeTabla"><b>80%</b></p>
+            <p className="textoTabla">de tráfico por internet será representado por videos en el año 2022.</p>
+            <p className="fuentesTabla">FUENTES: Forbes</p>
+          </div>
+          <div className="celdaTablaVideo">
+            <p className="porcentajeTabla"><b>90%</b></p>
+            <p className="textoTabla">de los consumidores son influenciados en sus decisiones por un video.</p>
+            <p className="fuentesTabla">FUENTES: Forbes</p>
+          </div>
+          <div className="celdaTablaVideo">
+            <p className="porcentajeTabla"><b>64%</b></p>
+            <p className="textoTabla">de los consumidores prefieren comprar después de ver un video.</p>
+            <p className="fuentesTabla">FUENTES: Forbes</p>
+          </div>
+          <div className="celdaTablaVideo">
+            <p className="porcentajeTabla"><b>100%</b></p>
+            <p className="textoTabla">es lo que aumenta según Youtube, el Mobile Video cada año.</p>
+            <p className="fuentesTabla">FUENTES: Forbes</p>
+          </div>
+        </div>
+>>>>>>> bfe3cdf1c272ed6ecab45d5e9f70cdbc91e6290b
       </div>
     </div>
   );

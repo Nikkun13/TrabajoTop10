@@ -25,7 +25,7 @@
 @media screen and (max-width:900px) {
     .nosotrosDescripcion {
         font-size: 20px;
-        width: 600px;
+        width: 80vw;
     }
 
     .nosotrosBanner {
@@ -34,5 +34,19 @@
 
     .logo1 svg {
        height: 6vh;
+}
+}
+
+@media screen and (max-width:550px) {
+    .nosotrosDescripcion {
+        font-size: 16px;
+    }
+
+    .nosotrosBanner {
+        font-size: 42px;
+    }
+
+    .logo1 svg {
+       height: 5vh;
 }
 }
