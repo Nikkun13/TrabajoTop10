@@ -74,7 +74,10 @@ const Testimonials = () => {
               data-bs-target="#carouseInterval"
               data-bs-slide="prev"
             >
-              <span aria-hidden="true"></span>
+              <span
+                aria-hidden="true"
+                className="carousel-control-prev-icon"
+              ></span>
               <span className="visually-hidden">Previous</span>
             </button>
             <button
