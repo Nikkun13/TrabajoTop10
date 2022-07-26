@@ -93,7 +93,7 @@ const Contact = () => {
         {/* */}
         <div className="form">
           <form
-            action="https://formsubmit.co/jdmoraelpro1@gmail.com"
+            action="https://formsubmit.co/ortizpellegrinifrancisco@gmail.com"
             method="POST"
           >
             <ul className="container">
