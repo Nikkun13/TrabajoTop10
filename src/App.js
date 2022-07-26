@@ -1,5 +1,4 @@
 import Main from "./components/Main/Main";
-import PortfolioPage from "./components/PortfolioPage/PortfolioPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -21,7 +20,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/portfolio/:id" element={<PortfolioPage />} />
           <Route
             path="*"
             element={

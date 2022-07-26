@@ -1,122 +1,10 @@
 import "./Portfolio.css";
 import ReactPlayer from "react-player";
-import { Link } from "react-router-dom";
 
 const Portfolio = () => {
-  const burbuja = (e) => {
-    if ((e.target.className = "d-block")) {
-      let x = e.clientX;
-      let y = e.clientY;
-      e.target.nextSibling.style.top = y - 100 + "px";
-      e.target.nextSibling.style.left = x - 800 + "px";
-    }
-  };
 
   return (
-    <div id="portfolio" className="portfolioSeccion">
-      <div
-        id="carouselExampleInterval"
-        className="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner">
-          <div
-            className="carousel-item active"
-            data-bs-interval="10000"
-            style={{ height: "100vh" }}
-          >
-            <div>
-              <Link className="imgPortfolio" to={"/portfolio/1"}>
-                <img
-                  onMouseMove={burbuja}
-                  src="./images/carrusel-img-1.png"
-                  className="w-100"
-                  style={{ height: "100vh", width: "100%", objectFit: "cover" }}
-                  alt="..."
-                />
-                <button className="burbuja">Ver proyecto</button>
-              </Link>
-            </div>
-            <div className="carruselInfo d-md-block">
-              <span className="textoCarrusel">FOTOGRAFÍA 1 | PRODUCTO </span>
-              <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
-              <p className="textoCarrusel">
-                Videos y fotos promocionales de la marca, presentación de
-                productos.
-              </p>
-            </div>
-          </div>
-          <div
-            className="carousel-item"
-            data-bs-interval="2000"
-            style={{ height: "100vh" }}
-          >
-            <Link className="imgPortfolio" to={`/portfolio/2`}>
-              <img
-                onMouseMove={burbuja}
-                src="./images/PruebaDos.jpg"
-                style={{ height: "100vh", width: "100%", objectFit: "cover" }}
-                className="w-100"
-                alt="..."
-              />
-              <button className="burbuja">Ver proyecto</button>
-            </Link>
-            <div className="carruselInfo d-md-block">
-              <span className="textoCarrusel">FOTOGRAFÍA 2 | PRODUCTO </span>
-              <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
-              <p className="textoCarrusel">
-                Videos y fotos promocionales de la marca, presentación de
-                productos.
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item" style={{ height: "100vh" }}>
-            <Link className="imgPortfolio" to={`/portfolio/3`}>
-              <img
-                onMouseMove={burbuja}
-                src="./images/PruebaTres.jpg"
-                className=" w-100"
-                style={{ height: "100vh", width: "100%", objectFit: "cover" }}
-                alt="..."
-              />
-              <button className="burbuja">Ver proyecto</button>
-            </Link>
-            <div className="carruselInfo d-md-block">
-              <span className="textoCarrusel">FOTOGRAFÍA 3 | PRODUCTO </span>
-              <h3 className="tituloCarrusel">TÍTULO DEL PROYECTO</h3>
-              <p className="textoCarrusel">
-                Videos y fotos promocionales de la marca, presentación de
-                productos.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-      {/*Fin carrusel */}
+    <div className="portfolioSeccion">
       <div className="separacion seccion">
         <marquee
           scrolldelay="80"
@@ -148,7 +36,7 @@ const Portfolio = () => {
         <br />
       </div>
 
-      <div className="seccion">
+      <div className="seccion" id="portfolio">
         <div className="videoDrone d-md-block">
           <ReactPlayer
             url={require("../../media/videos/videoBicicleta.mp4")}
