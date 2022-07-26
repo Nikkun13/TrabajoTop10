@@ -26,6 +26,7 @@
     .nosotrosDescripcion {
         font-size: 20px;
         width: 80vw;
+        left: 6vh;
     }
 
     .nosotrosBanner {
@@ -40,6 +41,7 @@
 @media screen and (max-width:550px) {
     .nosotrosDescripcion {
         font-size: 16px;
+        left: 2vh;
     }
 
     .nosotrosBanner {

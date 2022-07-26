@@ -202,9 +202,14 @@ textarea:focus {
     font-size: 0.6rem;
   }
   .contactTituloDos {
-    font-size: 9.5vh;
+    font-size: 90px;
     padding: 0px;
   }
+
+  .contactTituloUno {
+    font-size: 20px;
+  }
+
   .contacto {
     align-items: center;
     flex-direction: column;
@@ -218,6 +223,12 @@ textarea:focus {
     justify-content: center;
   }
   .contactMail {
-    font-size: 3.5vh;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contactTituloDos {
+    font-size: 60px;
   }
 }
