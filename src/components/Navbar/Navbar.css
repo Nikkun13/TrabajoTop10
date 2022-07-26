@@ -133,6 +133,7 @@
 
 .menuFooter {
   display: none;
+  color: #57199e;
   border-top: 2px solid #e3b6f9;
 }
 
@@ -145,11 +146,11 @@
   width: 3rem;
   height: 3rem;
   background-color: transparent;
-  border-radius: 40px;
-  border: 2px solid #e3b6f9;
+
+  border: none;
 }
 .redesFooter button svg {
-  fill: #e3b6f9;
+  fill: #57199e;
 }
 .redesFooter button:hover {
   background-color: #e3b6f9;
@@ -190,7 +191,6 @@
 
   .menuFooter {
     display: block;
-    padding-top: 2vh;
   }
 
   .navigation-menu ul li:hover::after {
@@ -208,7 +208,13 @@
   }
 
   .navigation-menu li a {
-    color: #e3b6f9;
+    color: #57199e66;
+    width: 100%;
+    padding: 1.5rem 0;
+    font-size: 20px;
+  }
+  .navigation-menu li a:active {
+    color: #6b16ae;
     width: 100%;
     padding: 1.5rem 0;
     font-size: 20px;
