@@ -143,6 +143,10 @@ const Contact = () => {
                   id="Asunto"
                   name="Asunto"
                   required
+                  onInvalid={(e) =>
+                    e.target.setCustomValidity("Introduce un asunto")
+                  }
+                  onInput={(e) => e.target.setCustomValidity("")}
                 />
                 <label>Introduce un asunto *</label>
               </li>
