@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   return (
     <>
       <a
-        href="https://api.whatsapp.com/send?phone=543512609595&text=Hola%21%20"
+        href="https://api.whatsapp.com/send?phone=+543512609595&text=%C2%A1Hola!%20Quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20a%20cerca%20de..."
         target="blank"
         className="floatWpp"
       >
