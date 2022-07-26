@@ -49,10 +49,6 @@
   margin: 0.5rem;
 }
 
-.seccion table {
-  margin: 0 5vw;
-}
-
 .tituloDosDrone {
   font-size: 60px;
   margin: 0.5rem;
@@ -77,8 +73,15 @@
   color: #e3b6f9;
 }
 
-.margenTabla {
-  padding: 10px 20px;
+.tablaVideo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 4vw;
+}
+
+.celdaTablaVideo {
+  width: 23vw;
+  padding: 0 4vw;
 }
 
 /* estilos carrusel */
@@ -149,6 +152,37 @@
 
   .fuentesTabla {
     font-size: 10px;
+  }
+
+  .tituloUnoDrone {
+    font-size: 20px;
+  }
+  
+  .tituloDosDrone {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .tablaVideo {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 5vw;
+  }
+
+  .celdaTablaVideo {
+    width: 45vw;
+    padding: 0 5vw;
+  }
+
+  .tituloUnoDrone {
+    font-size: 16px;
+  }
+  
+  .tituloDosDrone {
+    font-size: 22px;
   }
 
 }
