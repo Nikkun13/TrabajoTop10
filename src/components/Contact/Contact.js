@@ -107,7 +107,7 @@ const Contact = () => {
                   placeholder="Nombre y apellidos"
                   type="text"
                   id="name"
-                  name="name"
+                  name="nombre"
                   required
                 />
               </li>
@@ -122,9 +122,9 @@ const Contact = () => {
                   placeholder="E-mail"
                   type="email"
                   id="mail"
-                  name="mail"
                   required
                 />
+                <label>E-mail obligatorio *</label>
               </li>
               <li className="Phone">
                 <input
@@ -132,10 +132,24 @@ const Contact = () => {
                   placeholder="Teléfono"
                   type="number"
                   id="telephone"
-                  name="telephone"
+                  name="teléfono"
+                  pattern=".{5,10}"
                 />
               </li>
-
+              <li className="Asunto">
+                <input
+                  className="asuntoForm"
+                  placeholder="Asunto"
+                  id="Asunto"
+                  name="Asunto"
+                  required
+                  onInvalid={(e) =>
+                    e.target.setCustomValidity("Introduce un asunto")
+                  }
+                  onInput={(e) => e.target.setCustomValidity("")}
+                />
+                <label>Introduce un asunto *</label>
+              </li>
               <li className="Msg">
                 <textarea
                   onInvalid={(e) =>
@@ -145,11 +159,20 @@ const Contact = () => {
                   placeholder="Mensaje"
                   className="textForm"
                   id="msg"
-                  name="message"
+                  name="mensaje"
                   required
                 ></textarea>
+                <label>Introduce tu mensaje *</label>
               </li>
-
+              <li style={{ display: "none" }}>
+                <input
+                  className="telephoneForm"
+                  placeholder="Teléfono"
+                  type="number"
+                  id="telephone"
+                  name="teléfono"
+                />
+              </li>
               <button type="submit" className="Button">
                 Enviar
               </button>
