@@ -2,7 +2,6 @@ import "./Portfolio.css";
 import ReactPlayer from "react-player";
 
 const Portfolio = () => {
-
   return (
     <div className="portfolioSeccion">
       <div className="separacion seccion">
@@ -40,14 +39,22 @@ const Portfolio = () => {
         <div className="videoDrone d-md-block">
           <ReactPlayer
             url={require("../../media/videos/videoBicicleta.mp4")}
-            width="100vmax"
+            width="100%"
             height="100%"
             controls
           />
           <div className="textoDrone">
             <p className="tituloUnoDrone">Exteriores</p>
             <h3 className="tituloDosDrone">Toma de drones</h3>
-            <p className="tituloUnoDrone">¿Tienes dudas? ¡Contáctanos!</p>
+            <p className="tituloUnoDrone">
+              ¿Tienes dudas?
+              <a
+                href="https://api.whatsapp.com/send?phone=+543512609595&text=%C2%A1Hola!%20Quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20a%20cerca%20de..."
+                target="blank"
+              >
+                ¡Contáctanos!
+              </a>
+            </p>
           </div>
         </div>
       </div>
