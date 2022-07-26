@@ -152,7 +152,7 @@ const Portfolio = () => {
         <div className="videoDrone d-md-block">
           <ReactPlayer
             url={require("../../media/videos/videoBicicleta.mp4")}
-            width="100%"
+            width="100vmax"
             height="100%"
             controls
           />
