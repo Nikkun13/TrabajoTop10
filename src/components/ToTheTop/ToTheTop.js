@@ -11,7 +11,7 @@ const ToTheTop = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M14 34L14 -8.34465e-07" stroke="white" stroke-width="3" />
+          <path d="M14 34L14 -8.34465e-07" stroke="white" strokeWidth="3" />
           <mask
             id="mask0_2_173"
             maskUnits="userSpaceOnUse"
@@ -38,7 +38,7 @@ const ToTheTop = () => {
               ry="18.5"
               transform="rotate(-90 -4.5 5.18633e-07)"
               stroke="white"
-              stroke-width="3"
+              strokeWidth="3"
             />
             <ellipse
               cx="32.5"
@@ -47,7 +47,7 @@ const ToTheTop = () => {
               ry="18.5"
               transform="rotate(-90 32.5 5.18633e-07)"
               stroke="white"
-              stroke-width="3"
+              strokeWidth="3"
             />
           </g>
         </svg>

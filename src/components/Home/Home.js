@@ -62,14 +62,6 @@ const Home = () => {
               </div>
             </>
           )}
-          {/* video de prueba, luego hay que colocar el video que va */}
-          {/* Me volvi loco porque no fucionaba bien el autoplay, buscando buscando encontre el porque...
-            Chrome desactiva el autoplay de los videos que tienen volumen, probe poniendo el volumen en 0 y
-            funciona bien. Asi que si el video de Fran tiene volumen, no puede tener autoplay, una u otra. */}
-          {/* Hice lo que pude para que la altura del video fuera igual a la de la pantalla,
-      no era tan facil como poner cover y nada mas, no se si quedo bien, y no se sirve para el mobile creo
-      ya que no pude probar mucho. Depende el tamaño del video de Fran hay que cambiar la altura
-      ya que talvez no quede bien con 140% */}
         </div>
       </div>
       <div className="areaVolumen">
