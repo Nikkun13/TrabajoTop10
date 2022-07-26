@@ -92,26 +92,37 @@ const Contact = () => {
 
         {/* */}
         <div className="form">
-          <form action="/my-handling-form-page" method="post">
+          <form
+            action="https://formsubmit.co/ortizpellegrinifrancisco@gmail.com"
+            method="POST"
+          >
             <ul className="container">
               <li className="Name">
                 <input
+                  onInvalid={(e) =>
+                    e.target.setCustomValidity("Introduce tu nombre")
+                  }
+                  onInput={(e) => e.target.setCustomValidity("")}
                   className="nombreForm"
                   placeholder="Nombre y apellidos"
                   type="text"
                   id="name"
-                  name="user_name"
+                  name="name"
                   required
                 />
               </li>
 
               <li className="Email">
                 <input
+                  onInvalid={(e) =>
+                    e.target.setCustomValidity("Introduce tu e-mail")
+                  }
+                  onInput={(e) => e.target.setCustomValidity("")}
                   className="mailForm"
                   placeholder="E-mail"
                   type="email"
                   id="mail"
-                  name="user_mail"
+                  name="mail"
                   required
                 />
               </li>
@@ -121,17 +132,20 @@ const Contact = () => {
                   placeholder="Teléfono"
                   type="number"
                   id="telephone"
-                  name="user_telephone"
-                  required
+                  name="telephone"
                 />
               </li>
 
               <li className="Msg">
                 <textarea
+                  onInvalid={(e) =>
+                    e.target.setCustomValidity("Introduce tu mensaje")
+                  }
+                  onInput={(e) => e.target.setCustomValidity("")}
                   placeholder="Mensaje"
                   className="textForm"
                   id="msg"
-                  name="user_message"
+                  name="message"
                   required
                 ></textarea>
               </li>
