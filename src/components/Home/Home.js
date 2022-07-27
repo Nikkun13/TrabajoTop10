@@ -28,9 +28,9 @@ const Home = () => {
             <>
               <div className="react-player">
                 <ReactPlayer
-                  url={require("../../media/videos/videoBicicleta.mp4")}
-                  width="auto"
-                  height="140%"
+                  url={require("../../media/videos/personal_1.mp4")}
+                  width="100%"
+                  height="auto"
                   playing
                   loop
                   volume={volOnOff}
@@ -48,8 +48,8 @@ const Home = () => {
               <div className="react-player">
                 <ReactPlayer
                   url={require("../../media/videos/videoBicicleta.mp4")}
-                  width="auto"
-                  height="140%"
+                  width="100%"
+                  height="auto"
                   loop
                   volume={volOnOff}
                   className="videoR"
