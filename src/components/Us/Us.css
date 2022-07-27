@@ -1,13 +1,8 @@
-.logo1 {
-    position: absolute;
-    right: 10vw;
-    margin-top: 20px;
-}
-
-.logo1 svg {
-        margin: 0 auto;
-        width: auto;
-       height: 8vh;
+.imgNosotros {
+    width: 30vw;
+    border-radius: 15vw;
+    margin-left: 60vw;
+    margin-top: -150px;
 }
 
 .nosotrosBanner {
@@ -16,31 +11,26 @@
 
 .nosotrosDescripcion {
     font-size: 32px;
-    width: 830px;
-    left: 10vh;
+    width: 63vw;
+    left: 7vh;
     position: relative;
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 @media screen and (max-width:900px) {
     .nosotrosDescripcion {
         font-size: 20px;
-        width: 80vw;
-        left: 6vh;
+        left: 5vh;
     }
 
     .nosotrosBanner {
         font-size: 60px;
     }
-
-    .logo1 svg {
-       height: 6vh;
-}
 }
 
 @media screen and (max-width:550px) {
     .nosotrosDescripcion {
-        font-size: 16px;
+        width: 90vw;
         left: 2vh;
     }
 
@@ -48,7 +38,10 @@
         font-size: 42px;
     }
 
-    .logo1 svg {
-       height: 5vh;
+.imgNosotros {
+    width: 60vw;
+    border-radius: 30vw;
+    margin-left: 30vw;
+    margin-top: 0;
 }
 }
