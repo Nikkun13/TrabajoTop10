@@ -38,7 +38,7 @@ const Portfolio = () => {
       <div className="seccion" id="portfolio">
         <div className="videoDrone d-md-block">
           <ReactPlayer
-            url={require("../../media/videos/videoBicicleta.mp4")}
+            url={require("../../media/videos/dron_1.mp4")}
             width="100%"
             height="100%"
             controls
