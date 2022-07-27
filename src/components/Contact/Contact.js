@@ -24,6 +24,27 @@ const Contact = () => {
     }
   };
 
+  const validar = (e) => {
+    console.log(e.target.name);
+    if (
+      e.target.name === "nombre" &&
+      e.target.value.length > 0 &&
+      e.target.value.length < 3
+    ) {
+      e.target.style.borderColor = "#8B22DE";
+      e.target.nextSibling.style.opacity = 1;
+    } else if (
+      e.target.value.length > 0 &&
+      e.target.value.length < 5 &&
+      e.target.name !== "nombre"
+    ) {
+      e.target.style.borderColor = "#8B22DE";
+      e.target.nextSibling.style.opacity = 1;
+    } else {
+      e.target.style.borderColor = "";
+      e.target.nextSibling.style.opacity = 0;
+    }
+  };
   return (
     <div id="contacto">
       <div className="escribenos seccion">
@@ -109,11 +130,14 @@ const Contact = () => {
                   id="name"
                   name="nombre"
                   required
+                  onChange={validar}
                 />
+                <label style={{ opacity: 0 }}>Introduce tu nombre *</label>
               </li>
 
               <li className="Email">
                 <input
+                  onChange={validar}
                   onInvalid={(e) =>
                     e.target.setCustomValidity("Introduce tu e-mail")
                   }
@@ -124,7 +148,7 @@ const Contact = () => {
                   id="mail"
                   required
                 />
-                <label>E-mail obligatorio *</label>
+                <label style={{ opacity: 0 }}>E-mail obligatorio *</label>
               </li>
               <li className="Phone">
                 <input
@@ -138,6 +162,7 @@ const Contact = () => {
               </li>
               <li className="Asunto">
                 <input
+                  onChange={validar}
                   className="asuntoForm"
                   placeholder="Asunto"
                   id="Asunto"
@@ -148,7 +173,7 @@ const Contact = () => {
                   }
                   onInput={(e) => e.target.setCustomValidity("")}
                 />
-                <label>Introduce un asunto *</label>
+                <label style={{ opacity: 0 }}>Introduce un asunto *</label>
               </li>
               <li className="Msg">
                 <textarea
@@ -161,8 +186,9 @@ const Contact = () => {
                   id="msg"
                   name="mensaje"
                   required
+                  onChange={validar}
                 ></textarea>
-                <label>Introduce tu mensaje *</label>
+                <label style={{ opacity: 0 }}>Introduce tu mensaje *</label>
               </li>
               <li style={{ display: "none" }}>
                 <input

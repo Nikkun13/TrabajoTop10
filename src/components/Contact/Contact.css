@@ -146,12 +146,7 @@ textarea:focus {
   border-color: #e3b6f9;
   outline: none;
 }
-input:required {
-  border-color: #8b22de;
-}
-textarea:required {
-  border-color: #8b22de;
-}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -200,6 +195,9 @@ textarea:focus {
   position: fixed;
   animation: 0.3s ease-out;
   transition: all 0.3s linear;
+}
+.borde {
+  border-color: red;
 }
 @media (max-width: 763px) {
   li label {
