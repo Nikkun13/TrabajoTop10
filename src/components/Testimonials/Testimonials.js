@@ -34,35 +34,36 @@ const Testimonials = () => {
       >
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="10000">
-            <div className="testimonioCliente">
+          <div className="testCard">
               <h4 className="testimonio">
-                Estamos muy contentos porque las clases son muy lúdicas, a
-                través del juego y de canciones (...) Os animamos a venir.”
+              Nos dedicamos a la repostería y toparnos con la realización de imágenes y videos 
+              que estén al nivel de la calidad del producto no fue tarea fácil. Valoramos haber 
+              encontrado a Francisco para lograr una producción bien pensada y ejecutada, para destacar el producto como se lo merece.”
               </h4>
-              <span className="estrellasPintadas">★★★★</span>
-              <span className="estrellasSinPintar">★</span>
-              <h6 className="nombreTestimonio">-ROCIO</h6>
+              <p className="estrellasPintadas">★★★★★</p>
+              <h6 className="nombreTestimonio">COCOLA.ARTECACAO</h6>
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <div className="testimonioCliente">
+            <div className="testCard">
               <h4 className="testimonio">
-                Estamos muy felices porque las clases son muy lúdicas, a través
-                del juego y de canciones (...) Os animamos a venir.”
+              Hemos solicitado los servicios de Francisco de parte del club para el registro 
+              audiovisual de eventos deportivos en el cual con éxito ha logrado los resultados 
+              esperados, con gran capacidad de adaptación a nuestra idea principal, llevandola a cabo con gran creatividad y practicidad.”
               </h4>
-              <span className="estrellasPintadas">★★★</span>
-              <span className="estrellasSinPintar">★★</span>
-              <h6 className="nombreTestimonio">-FERNANDO</h6>
+              <p className="estrellasPintadas">★★★★★</p>
+              <h6 className="nombreTestimonio">CORDOBA LONGBOARD CLUB</h6>
             </div>
           </div>
           <div className="carousel-item">
-            <div>
+            <div className="testCard">
               <h4 className="testimonio">
-                Estamos muy animados porque las clases son muy lúdicas, a través
-                del juego y de canciones (...) Os animamos a venir.”
+              Brindó Ideas muy frescas, asertivas y concretas al momento del desarrollo de la marca 
+              y su comercialización. Propuesta y ejecución de ideas de contenido super creativas, modernas, 
+              con gran compresión del negocio dentro del mercado dado por su estudio, compromiso y orden.”
               </h4>
-              <span className="estrellasPintadas">★★★★★</span>
-              <h6 className="nombreTestimonio">-GUSTAVO</h6>
+              <p className="estrellasPintadas">★★★★★</p>
+              <h6 className="nombreTestimonio">VIVALED</h6>
             </div>
           </div>
         </div>
