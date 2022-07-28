@@ -48,6 +48,10 @@
     font-size: 14px;
     font-weight: 500;
   }
+  .testCard {
+    justify-content: center;
+    text-align: center;
+}
   .estrellasPintadas {
     font-size: 16px;
   }

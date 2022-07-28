@@ -41,7 +41,11 @@ const Portfolio = () => {
           style={{ height: "70vh", marginBottom: "3rem" }}
         >
           <ReactPlayer
+<<<<<<< HEAD
             url="https://www.youtube.com/watch?v=DA5x-Z6XnV8"
+=======
+            url={require("../../media/videos/dron_1.mp4")}
+>>>>>>> 58bfdef6b8d54891a43fe32f32eb0cf543244c71
             width="100%"
             height="140%"
             controls
