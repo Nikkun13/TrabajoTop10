@@ -28,7 +28,7 @@ const Home = () => {
             <>
               <div className="react-player">
                 <ReactPlayer
-                  url="https://www.youtube.com/watch?v=G6dlmPXBSOU"
+                  url={require("https://www.youtube.com/watch?v=G6dlmPXBSOU")}
                   width="100%"
                   height="140%"
                   playing
