@@ -41,9 +41,10 @@ const Portfolio = () => {
           style={{ height: "70vh", marginBottom: "3rem" }}
         >
           <ReactPlayer
-            url={require("https://www.youtube.com/watch?v=DA5x-Z6XnV8")}
+            url="https://www.youtube.com/watch?v=DA5x-Z6XnV8"
             width="100%"
             height="140%"
+            loop
             controls
           />
           <div className="textoDrone">
