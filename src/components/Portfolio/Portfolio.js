@@ -36,11 +36,15 @@ const Portfolio = () => {
       </div>
 
       <div className="seccion" id="portfolio">
-        <div className="videoDrone d-md-block">
+        <div
+          className="videoDrone d-md-block"
+          style={{ height: "70vh", marginBottom: "3rem" }}
+        >
           <ReactPlayer
-            url={require("../../media/videos/dron_1.mp4")}
+            url="https://www.youtube.com/watch?v=DA5x-Z6XnV8"
             width="100%"
-            height="100%"
+            height="140%"
+            loop
             controls
           />
           <div className="textoDrone">

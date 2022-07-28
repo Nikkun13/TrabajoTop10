@@ -1,5 +1,5 @@
 import "./Home.css";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/youtube";
 
 import { useState } from "react";
 
@@ -28,9 +28,9 @@ const Home = () => {
             <>
               <div className="react-player">
                 <ReactPlayer
-                  url={require("../../media/videos/personal_1.mp4")}
+                  url="https://www.youtube.com/watch?v=G6dlmPXBSOU"
                   width="100%"
-                  height="auto"
+                  height="140%"
                   playing
                   loop
                   volume={volOnOff}
@@ -47,9 +47,9 @@ const Home = () => {
             <>
               <div className="react-player">
                 <ReactPlayer
-                  url={require("../../media/videos/videoBicicleta.mp4")}
+                  url="https://www.youtube.com/watch?v=G6dlmPXBSOU"
                   width="100%"
-                  height="auto"
+                  height="140%"
                   loop
                   volume={volOnOff}
                   className="videoR"
@@ -65,26 +65,26 @@ const Home = () => {
         </div>
       </div>
       <div className="areaVolumen">
-            {volOnOff === 1 ? (
-              <button className="botonVolumen" onClick={volumenOnOff}>
-                <div className="barras">
-                  <div className="barraUno prendida"></div>
-                  <div className="barraDos prendida"></div>
-                  <div className="barraTres prendida"></div>
-                  <div className="barraCuatro prendida"></div>
-                </div>
-              </button>
-            ) : (
-              <button className="botonVolumen" onClick={volumenOnOff}>
-                <div className="barras">
-                  <div className="barraUno apagada"></div>
-                  <div className="barraDos apagada"></div>
-                  <div className="barraTres apagada"></div>
-                  <div className="barraCuatro apagada"></div>
-                </div>
-              </button>
-            )}
-          </div>
+        {volOnOff === 1 ? (
+          <button className="botonVolumen" onClick={volumenOnOff}>
+            <div className="barras">
+              <div className="barraUno prendida"></div>
+              <div className="barraDos prendida"></div>
+              <div className="barraTres prendida"></div>
+              <div className="barraCuatro prendida"></div>
+            </div>
+          </button>
+        ) : (
+          <button className="botonVolumen" onClick={volumenOnOff}>
+            <div className="barras">
+              <div className="barraUno apagada"></div>
+              <div className="barraDos apagada"></div>
+              <div className="barraTres apagada"></div>
+              <div className="barraCuatro apagada"></div>
+            </div>
+          </button>
+        )}
+      </div>
     </div>
   );
 };
